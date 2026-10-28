@@ -13,4 +13,7 @@ MonoBehaviour:
   m_Name: StoneHarvester
   m_EditorClassIdentifier: Assembly-CSharp::BuildingTypeSO
   buildingName: Stone Harvester
-  prefab: {fileID: 7866275409232125555, guid: e7bc55a8b48600348818b9e469cb885c, type: 3}
+  prefab: {fileID: 8611081450187297758, guid: 0b9d73583a16fe74f9f2f95ee917d155, type: 3}
+  resourceGeneratorData:
+    generateResouseTimerMax: 1
+    resourceTypeSO: {fileID: 11400000, guid: 5d9a0912be153834f9f640b2c6b2f6b4, type: 2}

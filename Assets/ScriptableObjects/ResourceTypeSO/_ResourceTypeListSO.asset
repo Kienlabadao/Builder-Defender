@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5097a0f6b1ca234198e76108109bd9d, type: 3}
   m_Name: _ResourceTypeListSO
   m_EditorClassIdentifier: Assembly-CSharp::ResourceTypeListSO
-  ResourceTypeSOList: []
+  resourceTypeSOList:
+  - {fileID: 11400000, guid: dbd428ed04b70af44a3761bf4b277e2c, type: 2}
+  - {fileID: 11400000, guid: 5d9a0912be153834f9f640b2c6b2f6b4, type: 2}
+  - {fileID: 11400000, guid: 68c27d0918bbe4d45b38ad399e7c4847, type: 2}

@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e096d828e51ee614aad02aa104129213, type: 3}
   m_Name: Gold
   m_EditorClassIdentifier: Assembly-CSharp::ResourceTypeSO
-  ResourseName: Gold
-  sprite: {fileID: 0}
+  resourseName: Gold
+  sprite: {fileID: 21300000, guid: 8b744c47cb320b84889a7b8439a78bc2, type: 3}

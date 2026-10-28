@@ -12,5 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05274ae1bdbfbeb42926d574a6787a8e, type: 3}
   m_Name: GoldHarvester
   m_EditorClassIdentifier: Assembly-CSharp::BuildingTypeSO
-  buildingName: Stone Harvester
-  prefab: {fileID: 7866275409232125555, guid: e7bc55a8b48600348818b9e469cb885c, type: 3}
+  buildingName: Gold Harvester
+  prefab: {fileID: 8611081450187297758, guid: 9b05f04e32a78814aab8481e0d9f7969, type: 3}
+  resourceGeneratorData:
+    generateResouseTimerMax: 2
+    resourceTypeSO: {fileID: 11400000, guid: 68c27d0918bbe4d45b38ad399e7c4847, type: 2}
