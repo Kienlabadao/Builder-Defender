@@ -5,10 +5,10 @@ public class ResourcesUI : MonoBehaviour {
     [SerializeField] private ResourceTypeListSO resourceTypeSOList;
     [SerializeField] private Transform resourceTemplate;
 
-    private Dictionary<ResourceTypeSO, Transform> resourceTypeTransormDictionary;
+    private Dictionary<ResourceTypeSO, Transform> resourceTypeTransformDictionary;
 
     private void Awake() {
-        resourceTypeTransormDictionary = new Dictionary<ResourceTypeSO, Transform>();
+        resourceTypeTransformDictionary = new Dictionary<ResourceTypeSO, Transform>();
 
         resourceTemplate.gameObject.SetActive(false);
     }
@@ -24,7 +24,7 @@ public class ResourcesUI : MonoBehaviour {
             resourcesSingleUI.SetResourceTypeSO(resourceTypeSO);
             resourcesSingleUI.SetAmount(ResourceManager.Instance.GetResourceAmount(resourceTypeSO));
 
-            resourceTypeTransormDictionary[resourceTypeSO] = resourceTransform;
+            resourceTypeTransformDictionary[resourceTypeSO] = resourceTransform;
         }
     }
 
@@ -33,8 +33,8 @@ public class ResourcesUI : MonoBehaviour {
     }
 
     private void ResourceManager_OnResourceAmountChanged(object sender, System.EventArgs e) {
-        foreach (ResourceTypeSO resourceTypeSO in resourceTypeSOList.resourceTypeSOList) {
-            Transform resourceTransform = resourceTypeTransormDictionary[resourceTypeSO];
+        foreach (ResourceTypeSO resourceTypeSO in resourceTypeTransformDictionary.Keys) {
+            Transform resourceTransform = resourceTypeTransformDictionary[resourceTypeSO];
 
             resourceTransform.GetComponent<ResourcesSingleUI>().SetAmount(ResourceManager.Instance.GetResourceAmount(resourceTypeSO));
         }

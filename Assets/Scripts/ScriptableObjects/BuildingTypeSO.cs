@@ -4,5 +4,6 @@ using UnityEngine;
 public class BuildingTypeSO : ScriptableObject {
     public string buildingName;
     public Transform prefab;
+    public Sprite sprite;
     public ResourceGeneratorData resourceGeneratorData;
 }

@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BuildingTypeSO
   buildingName: Wood Harvester
   prefab: {fileID: 8611081450187297758, guid: 198fb81baa3cb4d4bbda669270efb785, type: 3}
+  sprite: {fileID: 21300000, guid: 793ca27a5a3378149aaa12abe85933f4, type: 3}
   resourceGeneratorData:
     generateResouseTimerMax: 0.5
     resourceTypeSO: {fileID: 11400000, guid: dbd428ed04b70af44a3761bf4b277e2c, type: 2}
