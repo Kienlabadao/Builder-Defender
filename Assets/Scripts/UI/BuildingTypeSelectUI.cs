@@ -16,9 +16,11 @@ public class BuildingTypeSelectUI : MonoBehaviour {
         arrowButton = InstantiateButtonTransform(null);
 
         foreach (BuildingTypeSO buildingTypeSO in buildingTypeListSO.buildingTypeSOList) {
-            Transform buttonTransform = InstantiateButtonTransform(buildingTypeSO);
+            if (buildingTypeSO.canBePlaced) {
+                Transform buttonTransform = InstantiateButtonTransform(buildingTypeSO);
 
-            buildingTypeTransformDictionary[buildingTypeSO] = buttonTransform;
+                buildingTypeTransformDictionary[buildingTypeSO] = buttonTransform;
+            }
         }
     }
 

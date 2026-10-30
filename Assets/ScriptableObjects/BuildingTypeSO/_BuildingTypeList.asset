@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: _BuildingTypeList
   m_EditorClassIdentifier: Assembly-CSharp::BuildingTypeListSO
   buildingTypeSOList:
+  - {fileID: 11400000, guid: f87dc832ece096746a03f61cbe79f04b, type: 2}
   - {fileID: 11400000, guid: eae48f09c52ae4842878c9d3c9df81f7, type: 2}
   - {fileID: 11400000, guid: 15a615467f0936144bb7a8d8509869d4, type: 2}
   - {fileID: 11400000, guid: 9e5c68d99b9ea9249a3a63136875ba84, type: 2}

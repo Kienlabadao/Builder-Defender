@@ -12,6 +12,18 @@ PrefabInstance:
       propertyPath: buildingTypeSO
       value: 
       objectReference: {fileID: 11400000, guid: eae48f09c52ae4842878c9d3c9df81f7, type: 2}
+    - target: {fileID: 5475380370173181378, guid: 3c7b2ce7aa9cf2b48a24360bc3156c8c, type: 3}
+      propertyPath: m_Size.x
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5475380370173181378, guid: 3c7b2ce7aa9cf2b48a24360bc3156c8c, type: 3}
+      propertyPath: m_Size.y
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5475380370173181378, guid: 3c7b2ce7aa9cf2b48a24360bc3156c8c, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 5972714759279380715, guid: 3c7b2ce7aa9cf2b48a24360bc3156c8c, type: 3}
       propertyPath: m_Sprite
       value: 

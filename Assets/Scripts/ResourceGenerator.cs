@@ -2,7 +2,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(ResourceBuilding))]
 public class ResourceGenerator : MonoBehaviour {
-    [SerializeField] private float maxTimerReduction = .5f;
+    private const float MAX_TIMER_REDUCTION = .5f;
 
     private ResourceGeneratorData resourceGeneratorData;
     private float generateResouseTimer;
@@ -29,7 +29,7 @@ public class ResourceGenerator : MonoBehaviour {
             enabled = false;
         } else {
             // Calculate timer reduction percentage based on the resource amount. Reduce 0% at 1 resource. all the way to maxTimerReduction when nearbyResourceNodeAmount equal to maxResourceAmount, hence the -1
-            float timerReduction = maxTimerReduction * ((float)(nearbyResourceNodeAmount - 1) / (maxResourceAmount - 1));
+            float timerReduction = MAX_TIMER_REDUCTION * ((float)(nearbyResourceNodeAmount - 1) / (maxResourceAmount - 1));
 
             generateResouseTimerMax = resourceGeneratorData.generateResouseTimerMax * (1 - timerReduction);
         }
