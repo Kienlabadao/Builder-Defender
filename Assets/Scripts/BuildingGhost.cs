@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class BuildingGhost : MonoBehaviour {
     [SerializeField] private SpriteRenderer ghostSpriteRenderer;
+    [SerializeField] private GeneratorEfficiencyUI generatorEfficiencyUI;
 
     private void Start() {
         BuildingManager.Instance.OnActiveBuildingTypeChanged += BuildingManager_OnActiveBuildingTypeChanged;
@@ -19,19 +20,22 @@ public class BuildingGhost : MonoBehaviour {
 
     private void BuildingManager_OnActiveBuildingTypeChanged(object sender, BuildingManager.OnActiveBuildingTypeChangedEventArgs e) {
         if (e.activeBuildingTypeSO) {
-            Show(e.activeBuildingTypeSO.sprite);
+            Show(e.activeBuildingTypeSO);
         } else {
             Hide();
         }
     }
 
-    private void Show(Sprite ghostSprite) {
-        ghostSpriteRenderer.gameObject.SetActive(true);
+    private void Show(BuildingTypeSO buildingTypeSO) {
+        ghostSpriteRenderer.sprite = buildingTypeSO.sprite;
+        generatorEfficiencyUI.Show(buildingTypeSO.resourceGeneratorData);
 
-        ghostSpriteRenderer.sprite = ghostSprite;
+        ghostSpriteRenderer.gameObject.SetActive(true);
     }
 
     private void Hide() {
+        generatorEfficiencyUI.Hide();
+
         ghostSpriteRenderer.gameObject.SetActive(false);
     }
 }

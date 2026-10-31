@@ -81,7 +81,7 @@ PrefabInstance:
     - {fileID: 1897990247229758227, guid: 3c7b2ce7aa9cf2b48a24360bc3156c8c, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 7866275409232125555, guid: 3c7b2ce7aa9cf2b48a24360bc3156c8c, type: 3}
-      insertIndex: -1
+      insertIndex: 0
       addedObject: {fileID: 8456331870288226705}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c7b2ce7aa9cf2b48a24360bc3156c8c, type: 3}
@@ -210,7 +210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpritePositionSortingOrder
   runOnce: 1
-  positionOffset: -5
+  positionOffset: -2.5
 --- !u!1 &809311341963342584 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5699968318909826122, guid: a8ddac80caf74a6428bf2b24a8e001e0, type: 3}
@@ -229,7 +229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpritePositionSortingOrder
   runOnce: 1
-  positionOffset: -5
+  positionOffset: -2.5
 --- !u!1 &1522035790443097482 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5854188996312701752, guid: a8ddac80caf74a6428bf2b24a8e001e0, type: 3}
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpritePositionSortingOrder
   runOnce: 1
-  positionOffset: -5
+  positionOffset: -0.5
 --- !u!1 &1649054861816220162 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5963755691253267632, guid: a8ddac80caf74a6428bf2b24a8e001e0, type: 3}
@@ -267,7 +267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpritePositionSortingOrder
   runOnce: 1
-  positionOffset: -5
+  positionOffset: -1.5
 --- !u!1 &3888608051133888057 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8202751431971537035, guid: a8ddac80caf74a6428bf2b24a8e001e0, type: 3}
@@ -286,7 +286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpritePositionSortingOrder
   runOnce: 1
-  positionOffset: -5
+  positionOffset: -0.3
 --- !u!1 &4435815000978398650 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8768003391090076424, guid: a8ddac80caf74a6428bf2b24a8e001e0, type: 3}
@@ -305,7 +305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpritePositionSortingOrder
   runOnce: 1
-  positionOffset: -5
+  positionOffset: -1.5
 --- !u!1 &4515845141235529478 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8830041157585519028, guid: a8ddac80caf74a6428bf2b24a8e001e0, type: 3}
@@ -324,7 +324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpritePositionSortingOrder
   runOnce: 1
-  positionOffset: -5
+  positionOffset: -0.3
 --- !u!1 &7791488019041364298 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2882857428626350072, guid: a8ddac80caf74a6428bf2b24a8e001e0, type: 3}
@@ -343,7 +343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpritePositionSortingOrder
   runOnce: 1
-  positionOffset: -5
+  positionOffset: -2.5
 --- !u!1 &8206542407010759722 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3873768898918384280, guid: a8ddac80caf74a6428bf2b24a8e001e0, type: 3}
@@ -362,7 +362,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpritePositionSortingOrder
   runOnce: 1
-  positionOffset: -5
+  positionOffset: -3
 --- !u!4 &8456331870288226705 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3565715747615973155, guid: a8ddac80caf74a6428bf2b24a8e001e0, type: 3}
@@ -386,7 +386,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpritePositionSortingOrder
   runOnce: 1
-  positionOffset: -5
+  positionOffset: -2.5
 --- !u!1 &8599081051557178873 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3708441840902019915, guid: a8ddac80caf74a6428bf2b24a8e001e0, type: 3}
@@ -405,4 +405,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpritePositionSortingOrder
   runOnce: 1
-  positionOffset: -2.6
+  positionOffset: 0

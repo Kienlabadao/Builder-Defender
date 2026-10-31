@@ -17,7 +17,7 @@ public class SpritePositionSortingOrder : MonoBehaviour {
         spriteRenderer.sortingOrder = (int)(-(transform.position.y + positionOffset) * PRECISION_MULTIPLIER);
 
         if (runOnce) {
-            Destroy(this);
+            enabled = false;
         }
     }
 }

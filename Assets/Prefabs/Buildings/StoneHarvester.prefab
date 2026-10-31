@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpritePositionSortingOrder
   runOnce: 1
-  positionOffset: -3
+  positionOffset: 0
 --- !u!1 &3354145386433674819 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2892554008395358508, guid: 5b8b424b62a151c4f9620c86dacc2b1f, type: 3}
@@ -285,7 +285,7 @@ PrefabInstance:
     - {fileID: 1897990247229758227, guid: 3c7b2ce7aa9cf2b48a24360bc3156c8c, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 7866275409232125555, guid: 3c7b2ce7aa9cf2b48a24360bc3156c8c, type: 3}
-      insertIndex: -1
+      insertIndex: 0
       addedObject: {fileID: 5666529667261581044}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c7b2ce7aa9cf2b48a24360bc3156c8c, type: 3}

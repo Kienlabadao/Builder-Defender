@@ -5,8 +5,8 @@ public class ResourceGenerator : MonoBehaviour {
     private const float MAX_TIMER_REDUCTION = .5f;
 
     private ResourceGeneratorData resourceGeneratorData;
-    private float generateResouseTimer;
-    private float generateResouseTimerMax;
+    private float generateResourceTimer;
+    private float generateResourceTimerMax;
 
 
     private void Awake() {
@@ -14,7 +14,51 @@ public class ResourceGenerator : MonoBehaviour {
     }
 
     private void Start() {
-        Collider2D[] collider2DArray = Physics2D.OverlapCircleAll(transform.position, resourceGeneratorData.resourceDetectionRadius);
+        int maxResourceAmount = resourceGeneratorData.maxResourceAmount;
+        int nearbyResourceNodeAmount = GetNearbyResourceNodeAmount(resourceGeneratorData, transform.position);
+
+        if (nearbyResourceNodeAmount == 0) {
+            enabled = false;
+        } else {
+            // Calculate timer reduction percentage based on the resource amount. Reduce 0% at 1 resource. all the way to maxTimerReduction when nearbyResourceNodeAmount equal to maxResourceAmount, hence the -1
+            float timerReduction = MAX_TIMER_REDUCTION * ((float)(nearbyResourceNodeAmount - 1) / (maxResourceAmount - 1));
+
+            generateResourceTimerMax = resourceGeneratorData.generateResourceTimerMax * (1 - timerReduction);
+        }
+    }
+
+    private void Update() {
+        generateResourceTimer -= Time.deltaTime;
+
+        if (generateResourceTimer <= 0) {
+            generateResourceTimer = generateResourceTimerMax;
+
+            ResourceManager.Instance.AddResource(resourceGeneratorData.resourceTypeSO, 1);
+        }
+    }
+
+    public ResourceGeneratorData GetResourceGeneratorData() {
+        return resourceGeneratorData;
+    }
+
+    public float GetGenerateResourceTimerNormalized() {
+        if (generateResourceTimerMax <= 0f) {
+            return 0f;
+        }
+
+        return generateResourceTimer / generateResourceTimerMax;
+    }
+
+    public float GetAmountGeneratedPerSecond() {
+        if (generateResourceTimerMax <= 0f) {
+            return 0f;
+        }
+
+        return 1f / generateResourceTimerMax;
+    }
+
+    public static int GetNearbyResourceNodeAmount(ResourceGeneratorData resourceGeneratorData, Vector3 position) {
+        Collider2D[] collider2DArray = Physics2D.OverlapCircleAll(position, resourceGeneratorData.resourceDetectionRadius);
         int maxResourceAmount = resourceGeneratorData.maxResourceAmount;
 
         int nearbyResourceNodeAmount = 0;
@@ -23,27 +67,14 @@ public class ResourceGenerator : MonoBehaviour {
                 nearbyResourceNodeAmount++;
             }
         }
-        nearbyResourceNodeAmount = Mathf.Clamp(nearbyResourceNodeAmount, 0, maxResourceAmount);
 
-        if (nearbyResourceNodeAmount == 0) {
-            enabled = false;
-        } else {
-            // Calculate timer reduction percentage based on the resource amount. Reduce 0% at 1 resource. all the way to maxTimerReduction when nearbyResourceNodeAmount equal to maxResourceAmount, hence the -1
-            float timerReduction = MAX_TIMER_REDUCTION * ((float)(nearbyResourceNodeAmount - 1) / (maxResourceAmount - 1));
-
-            generateResouseTimerMax = resourceGeneratorData.generateResouseTimerMax * (1 - timerReduction);
-        }
-        Debug.Log(nearbyResourceNodeAmount);
-        Debug.Log(generateResouseTimerMax);
+        return Mathf.Clamp(nearbyResourceNodeAmount, 0, maxResourceAmount);
     }
 
-    private void Update() {
-        generateResouseTimer -= Time.deltaTime;
+    public static int GetEfficiencyPercentage(ResourceGeneratorData resourceGeneratorData, Vector3 position) {
+        int maxResourceAmount = resourceGeneratorData.maxResourceAmount;
+        int nearbyResourceNodeAmount = GetNearbyResourceNodeAmount(resourceGeneratorData, position);
 
-        if (generateResouseTimer <= 0) {
-            generateResouseTimer = generateResouseTimerMax;
-
-            ResourceManager.Instance.AddResource(resourceGeneratorData.resourceTypeSO, 1);
-        }
+        return Mathf.RoundToInt((float)nearbyResourceNodeAmount / maxResourceAmount * 100f);
     }
 }
