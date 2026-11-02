@@ -9,8 +9,6 @@ public class ResourcesUI : MonoBehaviour {
 
     private void Awake() {
         resourceTypeTransformDictionary = new Dictionary<ResourceTypeSO, Transform>();
-
-        resourceTemplate.gameObject.SetActive(false);
     }
 
     private void Start() {
@@ -26,6 +24,8 @@ public class ResourcesUI : MonoBehaviour {
 
             resourceTypeTransformDictionary[resourceTypeSO] = resourceTransform;
         }
+
+        resourceTemplate.gameObject.SetActive(false);
     }
 
     private void OnDestroy() {

@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Button))]
+[RequireComponent(typeof(MouseEnterExitEvents))]
 public class BuildingTypeSelectSingleUI : MonoBehaviour {
     [SerializeField] private Image iconImage;
     [SerializeField] private Image selectedImage;
@@ -11,11 +12,33 @@ public class BuildingTypeSelectSingleUI : MonoBehaviour {
     [SerializeField] private float arrowSpriteScale = .6f;
 
     private Button button;
+    private MouseEnterExitEvents mouseEnterExitEvents;
+    private Action onMouseEnterAction;
+    private Action onMouseExitAction;
 
     private void Awake() {
         button = GetComponent<Button>();
+        mouseEnterExitEvents = GetComponent<MouseEnterExitEvents>();
 
         selectedImage.enabled = false;
+    }
+
+    private void Start() {
+        mouseEnterExitEvents.OnMouseEnter += MouseEnterExitEvents_OnMouseEnter;
+        mouseEnterExitEvents.OnMouseExit += MouseEnterExitEvents_OnMouseExit;
+    }
+
+    private void OnDestroy() {
+        mouseEnterExitEvents.OnMouseEnter += MouseEnterExitEvents_OnMouseEnter;
+        mouseEnterExitEvents.OnMouseExit += MouseEnterExitEvents_OnMouseExit;
+    }
+
+    private void MouseEnterExitEvents_OnMouseExit(object sender, EventArgs e) {
+        onMouseExitAction?.Invoke();
+    }
+
+    private void MouseEnterExitEvents_OnMouseEnter(object sender, EventArgs e) {
+        onMouseEnterAction?.Invoke();
     }
 
     public void SetBuildingTypeSO(BuildingTypeSO buildingTypeSO) {
@@ -38,5 +61,13 @@ public class BuildingTypeSelectSingleUI : MonoBehaviour {
 
     public void SetSelected(bool isSelected) {
         selectedImage.enabled = isSelected;
+    }
+
+    public void SetOnMouseEnterAction(Action onMouseEnterAction) {
+        this.onMouseEnterAction = onMouseEnterAction;
+    }
+
+    public void SetOnMouseExitAction(Action onMouseExitAction) {
+        this.onMouseExitAction = onMouseExitAction;
     }
 }

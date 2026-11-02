@@ -20,5 +20,8 @@ MonoBehaviour:
     resourceTypeSO: {fileID: 11400000, guid: dbd428ed04b70af44a3761bf4b277e2c, type: 2}
     resourceDetectionRadius: 7
     maxResourceAmount: 7
+  constructionResourceCostArray:
+  - resourceTypeSO: {fileID: 11400000, guid: dbd428ed04b70af44a3761bf4b277e2c, type: 2}
+    amount: 10
   minConstructionRadius: 7
   canBePlaced: 1

@@ -15,6 +15,10 @@ public class BuildingManager : MonoBehaviour {
 
     private BuildingTypeSO activeBuildingTypeSO;
 
+    public class ToolTipTimer {
+        public float tooltipTime;
+    }
+
     private void Awake() {
         if (Instance != null && Instance != this) {
             Debug.LogError("There is more than one BuildingManager instance!");
@@ -24,17 +28,26 @@ public class BuildingManager : MonoBehaviour {
 
     private void Update() {
         if (Mouse.current.leftButton.wasPressedThisFrame &&
-            !EventSystem.current.IsPointerOverGameObject()) {
-            if (activeBuildingTypeSO != null &&
-                CanSpawnBuilding(activeBuildingTypeSO, UtilsClass.GetMouseWorldPosition())) {
-                Instantiate(activeBuildingTypeSO.prefab, UtilsClass.GetMouseWorldPosition(), Quaternion.identity);
+            !EventSystem.current.IsPointerOverGameObject() &&
+            activeBuildingTypeSO != null) {
+            if (ResourceManager.Instance.CanAfford(activeBuildingTypeSO.constructionResourceCostArray)) {
+                if (CanSpawnBuilding(activeBuildingTypeSO, UtilsClass.GetMouseWorldPosition(), out string errorMessage)) {
+                    Instantiate(activeBuildingTypeSO.prefab, UtilsClass.GetMouseWorldPosition(), Quaternion.identity);
+
+                    ResourceManager.Instance.SpendResource(activeBuildingTypeSO.constructionResourceCostArray);
+                } else {
+                    TooltipUI.Instance.Show(errorMessage, true);
+                }
+            } else {
+                TooltipUI.Instance.Show("Cannot afford!", activeBuildingTypeSO.constructionResourceCostArray, true);
             }
         }
     }
 
-    private bool CanSpawnBuilding(BuildingTypeSO buildingTypeSO, Vector3 position) {
+    private bool CanSpawnBuilding(BuildingTypeSO buildingTypeSO, Vector3 position, out string errorMessage) {
         if (!buildingTypeSO.canBePlaced) {
-            Debug.LogWarning($"Building {buildingTypeSO.name} aren't allow to be placed!");
+            errorMessage = $"Building {buildingTypeSO.name} aren't allowed to be placed!";
+            Debug.LogWarning(errorMessage);
 
             return false;
         }
@@ -43,6 +56,8 @@ public class BuildingManager : MonoBehaviour {
 
         Collider2D[] collider2DArray = Physics2D.OverlapBoxAll(position + (Vector3)boxCollider2D.offset, boxCollider2D.size, 0f);
         if (collider2DArray.Length != 0) {
+            errorMessage = "Area is not clear!";
+
             return false;
         }
 
@@ -50,6 +65,7 @@ public class BuildingManager : MonoBehaviour {
         foreach (Collider2D collider2D in collider2DArray) {
             if (collider2D.TryGetComponent(out ResourceBuilding resourceBuilding) &&
                 resourceBuilding.GetBuildingTypeSO() == buildingTypeSO) {
+                errorMessage = "Too close to another building of the same type!";
                 return false;
             }
         }
@@ -57,10 +73,13 @@ public class BuildingManager : MonoBehaviour {
         collider2DArray = Physics2D.OverlapCircleAll(position, maxConstructionRadius);
         foreach (Collider2D collider2D in collider2DArray) {
             if (collider2D.TryGetComponent(out ResourceBuilding _)) {
+                errorMessage = null;
+
                 return true;
             }
         }
 
+        errorMessage = "Too far from any other building!";
         return false;
     }
 

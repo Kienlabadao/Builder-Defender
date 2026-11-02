@@ -6,6 +6,7 @@ public class BuildingTypeSO : ScriptableObject {
     public Transform prefab;
     public Sprite sprite;
     public ResourceGeneratorData resourceGeneratorData;
+    public ResourceAmountData[] constructionResourceCostArray;
     public float minConstructionRadius;
     public bool canBePlaced;
 }

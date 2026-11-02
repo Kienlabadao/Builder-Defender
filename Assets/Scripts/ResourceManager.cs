@@ -30,6 +30,28 @@ public class ResourceManager : MonoBehaviour {
         }
     }
 
+    public bool CanAfford(ResourceAmountData[] resourceAmountDataArray) {
+        foreach (ResourceAmountData resourceAmountData in resourceAmountDataArray) {
+            if (resourceAmountDictionary[resourceAmountData.resourceTypeSO] < resourceAmountData.amount) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    public void SpendResource(ResourceAmountData[] resourceAmountDataArray) {
+        foreach (ResourceAmountData resourceAmountData in resourceAmountDataArray) {
+            if (resourceAmountDictionary[resourceAmountData.resourceTypeSO] < resourceAmountData.amount) {
+                Debug.LogError($"Not enough resources! Resource: {resourceAmountData.resourceTypeSO}. Amount currently: {resourceAmountDictionary[resourceAmountData.resourceTypeSO]}. Amount needed: {resourceAmountData.amount}");
+            }
+
+            resourceAmountDictionary[resourceAmountData.resourceTypeSO] -= resourceAmountData.amount;
+        }
+
+        OnResourceAmountChanged?.Invoke(this, EventArgs.Empty);
+    }
+
     public void AddResource(ResourceTypeSO resourceTypeSO, int amount) {
         resourceAmountDictionary[resourceTypeSO] += amount;
 

@@ -11,8 +11,6 @@ public class BuildingTypeSelectUI : MonoBehaviour {
     private void Awake() {
         buildingTypeTransformDictionary = new Dictionary<BuildingTypeSO, Transform>();
 
-        buttonTemplate.gameObject.SetActive(false);
-
         arrowButton = InstantiateButtonTransform(null);
 
         foreach (BuildingTypeSO buildingTypeSO in buildingTypeListSO.buildingTypeSOList) {
@@ -26,6 +24,8 @@ public class BuildingTypeSelectUI : MonoBehaviour {
 
     private void Start() {
         UpdateActiveBuildingTypeButton(BuildingManager.Instance.GetActiveBuildingTypeSO());
+
+        buttonTemplate.gameObject.SetActive(false);
     }
 
     private Transform InstantiateButtonTransform(BuildingTypeSO buildingTypeSO) {
@@ -42,6 +42,12 @@ public class BuildingTypeSelectUI : MonoBehaviour {
 
         if (buildingTypeSO != null) {
             buildingTypeSelectSingleUI.SetBuildingTypeSO(buildingTypeSO);
+            buildingTypeSelectSingleUI.SetOnMouseEnterAction(() => {
+                TooltipUI.Instance.Show(buildingTypeSO.buildingName, buildingTypeSO.constructionResourceCostArray);
+            });
+            buildingTypeSelectSingleUI.SetOnMouseExitAction(() => {
+                TooltipUI.Instance.Hide();
+            });
         } else {
             buildingTypeSelectSingleUI.SetArrowButton();
         }
