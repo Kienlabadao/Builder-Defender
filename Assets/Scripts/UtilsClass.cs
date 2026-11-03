@@ -25,6 +25,13 @@ public static class UtilsClass {
         return mouseWorldPosition;
     }
 
+    public static Vector3 GetRandomDir() {
+        return new Vector3(
+            UnityEngine.Random.Range(-1f, 1f),
+            UnityEngine.Random.Range(-1f, 1f)
+        ).normalized;
+    }
+
     public static Vector2 GetGridLayoutGroupContentSize(GridLayoutGroup gridLayoutGroup) {
         int childCount = GetGridLayoutGroupActiveChildCount(gridLayoutGroup);
         if (childCount <= 0) {

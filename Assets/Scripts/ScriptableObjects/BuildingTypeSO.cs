@@ -7,6 +7,7 @@ public class BuildingTypeSO : ScriptableObject {
     public Sprite sprite;
     public ResourceGeneratorData resourceGeneratorData;
     public ResourceAmountData[] constructionResourceCostArray;
-    public float minConstructionRadius;
-    public bool canBePlaced;
+    public float minConstructionRadius = 7f;
+    public bool canBePlaced = true;
+    public float healthAmountMax = 100f;
 }

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: StoneHarvester
   m_EditorClassIdentifier: Assembly-CSharp::BuildingTypeSO
   buildingName: Stone Harvester
-  prefab: {fileID: 8611081450187297758, guid: 0b9d73583a16fe74f9f2f95ee917d155, type: 3}
+  prefab: {fileID: 6147398714758771776, guid: 405cba54443066a4cbe098f8520a0987, type: 3}
   sprite: {fileID: 21300000, guid: 2263e91ebcd2a254dab5f4caccb4a7af, type: 3}
   resourceGeneratorData:
     generateResourceTimerMax: 2
@@ -25,3 +25,4 @@ MonoBehaviour:
     amount: 30
   minConstructionRadius: 7
   canBePlaced: 1
+  healthAmountMax: 100

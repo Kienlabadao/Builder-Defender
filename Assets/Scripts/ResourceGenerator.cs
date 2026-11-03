@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[RequireComponent(typeof(ResourceBuilding))]
+[RequireComponent(typeof(Building))]
 public class ResourceGenerator : MonoBehaviour {
     private const float MAX_TIMER_REDUCTION = .5f;
 
@@ -10,7 +10,7 @@ public class ResourceGenerator : MonoBehaviour {
 
 
     private void Awake() {
-        resourceGeneratorData = GetComponent<ResourceBuilding>().GetBuildingTypeSO().resourceGeneratorData;
+        resourceGeneratorData = GetComponent<Building>().GetBuildingTypeSO().resourceGeneratorData;
     }
 
     private void Start() {
