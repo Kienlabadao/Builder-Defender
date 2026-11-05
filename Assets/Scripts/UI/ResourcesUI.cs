@@ -2,27 +2,27 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ResourcesUI : MonoBehaviour {
-    [SerializeField] private ResourceTypeListSO resourceTypeSOList;
+    [SerializeField] private ResourceListSO resourceSOList;
     [SerializeField] private Transform resourceTemplate;
 
-    private Dictionary<ResourceTypeSO, Transform> resourceTypeTransformDictionary;
+    private Dictionary<ResourceSO, Transform> resourceTypeTransformDictionary;
 
     private void Awake() {
-        resourceTypeTransformDictionary = new Dictionary<ResourceTypeSO, Transform>();
+        resourceTypeTransformDictionary = new Dictionary<ResourceSO, Transform>();
     }
 
     private void Start() {
         ResourceManager.Instance.OnResourceAmountChanged += ResourceManager_OnResourceAmountChanged;
 
-        foreach (ResourceTypeSO resourceTypeSO in resourceTypeSOList.resourceTypeSOList) {
+        foreach (ResourceSO resourceSO in resourceSOList.resourceSOList) {
             Transform resourceTransform = Instantiate(resourceTemplate, transform);
             ResourcesSingleUI resourcesSingleUI = resourceTransform.GetComponent<ResourcesSingleUI>();
 
             resourceTransform.gameObject.SetActive(true);
-            resourcesSingleUI.SetResourceTypeSO(resourceTypeSO);
-            resourcesSingleUI.SetAmount(ResourceManager.Instance.GetResourceAmount(resourceTypeSO));
+            resourcesSingleUI.SetResourceSO(resourceSO);
+            resourcesSingleUI.SetAmount(ResourceManager.Instance.GetResourceAmount(resourceSO));
 
-            resourceTypeTransformDictionary[resourceTypeSO] = resourceTransform;
+            resourceTypeTransformDictionary[resourceSO] = resourceTransform;
         }
 
         resourceTemplate.gameObject.SetActive(false);
@@ -33,10 +33,10 @@ public class ResourcesUI : MonoBehaviour {
     }
 
     private void ResourceManager_OnResourceAmountChanged(object sender, System.EventArgs e) {
-        foreach (ResourceTypeSO resourceTypeSO in resourceTypeTransformDictionary.Keys) {
-            Transform resourceTransform = resourceTypeTransformDictionary[resourceTypeSO];
+        foreach (ResourceSO resourceSO in resourceTypeTransformDictionary.Keys) {
+            Transform resourceTransform = resourceTypeTransformDictionary[resourceSO];
 
-            resourceTransform.GetComponent<ResourcesSingleUI>().SetAmount(ResourceManager.Instance.GetResourceAmount(resourceTypeSO));
+            resourceTransform.GetComponent<ResourcesSingleUI>().SetAmount(ResourceManager.Instance.GetResourceAmount(resourceSO));
         }
     }
 }

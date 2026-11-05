@@ -10,7 +10,7 @@ public class ResourceGenerator : MonoBehaviour {
 
 
     private void Awake() {
-        resourceGeneratorData = GetComponent<Building>().GetBuildingTypeSO().resourceGeneratorData;
+        resourceGeneratorData = GetComponent<Building>().GetBuildingSO().resourceGeneratorData;
     }
 
     private void Start() {
@@ -33,7 +33,7 @@ public class ResourceGenerator : MonoBehaviour {
         if (generateResourceTimer <= 0) {
             generateResourceTimer = generateResourceTimerMax;
 
-            ResourceManager.Instance.AddResource(resourceGeneratorData.resourceTypeSO, 1);
+            ResourceManager.Instance.AddResource(resourceGeneratorData.resourceSO, 1);
         }
     }
 
@@ -63,7 +63,7 @@ public class ResourceGenerator : MonoBehaviour {
 
         int nearbyResourceNodeAmount = 0;
         foreach (Collider2D collider2D in collider2DArray) {
-            if (collider2D.TryGetComponent(out ResourceNode resourceNode) && resourceNode.GetResourceTypeSO() == resourceGeneratorData.resourceTypeSO) {
+            if (collider2D.TryGetComponent(out ResourceNode resourceNode) && resourceNode.GetResourceSO() == resourceGeneratorData.resourceSO) {
                 nearbyResourceNodeAmount++;
             }
         }

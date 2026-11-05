@@ -15,7 +15,7 @@ public class GeneratorEfficiencyUI : MonoBehaviour {
     public void Show(ResourceGeneratorData resourceGeneratorData) {
         this.resourceGeneratorData = resourceGeneratorData;
 
-        resourceIcon.sprite = resourceGeneratorData.resourceTypeSO.sprite;
+        resourceIcon.sprite = resourceGeneratorData.resourceSO.sprite;
 
         gameObject.SetActive(true);
     }

@@ -7,9 +7,10 @@ public class ResourceManager : MonoBehaviour {
 
     public event EventHandler OnResourceAmountChanged;
 
-    [SerializeField] private ResourceTypeListSO resourceTypeListSO;
+    [SerializeField] private ResourceListSO resourceListSO;
+    [SerializeField] private ResourceAmountData[] startingResourceArray;
 
-    private Dictionary<ResourceTypeSO, int> resourceAmountDictionary;
+    private Dictionary<ResourceSO, int> resourceAmountDictionary;
 
     private void Awake() {
         if (Instance != null && Instance != this) {
@@ -17,22 +18,26 @@ public class ResourceManager : MonoBehaviour {
         }
         Instance = this;
 
-        resourceAmountDictionary = new Dictionary<ResourceTypeSO, int>();
+        resourceAmountDictionary = new Dictionary<ResourceSO, int>();
 
-        foreach (ResourceTypeSO resourceTypeSO in resourceTypeListSO.resourceTypeSOList) {
-            resourceAmountDictionary[resourceTypeSO] = 0;
+        foreach (ResourceSO resourceSO in resourceListSO.resourceSOList) {
+            resourceAmountDictionary[resourceSO] = 0;
+        }
+
+        foreach (ResourceAmountData resourceAmountData in startingResourceArray) {
+            resourceAmountDictionary[resourceAmountData.resourceSO] = resourceAmountData.amount;
         }
     }
 
     private void TestLogResourceAmountDictionary() {
-        foreach (ResourceTypeSO resourceTypeSO in resourceAmountDictionary.Keys) {
-            Debug.Log($"{resourceTypeSO.resourseName}: {resourceAmountDictionary[resourceTypeSO]}");
+        foreach (ResourceSO resourceSO in resourceAmountDictionary.Keys) {
+            Debug.Log($"{resourceSO.resourseName}: {resourceAmountDictionary[resourceSO]}");
         }
     }
 
     public bool CanAfford(ResourceAmountData[] resourceAmountDataArray) {
         foreach (ResourceAmountData resourceAmountData in resourceAmountDataArray) {
-            if (resourceAmountDictionary[resourceAmountData.resourceTypeSO] < resourceAmountData.amount) {
+            if (resourceAmountDictionary[resourceAmountData.resourceSO] < resourceAmountData.amount) {
                 return false;
             }
         }
@@ -42,23 +47,23 @@ public class ResourceManager : MonoBehaviour {
 
     public void SpendResource(ResourceAmountData[] resourceAmountDataArray) {
         foreach (ResourceAmountData resourceAmountData in resourceAmountDataArray) {
-            if (resourceAmountDictionary[resourceAmountData.resourceTypeSO] < resourceAmountData.amount) {
-                Debug.LogError($"Not enough resources! Resource: {resourceAmountData.resourceTypeSO}. Amount currently: {resourceAmountDictionary[resourceAmountData.resourceTypeSO]}. Amount needed: {resourceAmountData.amount}");
+            if (resourceAmountDictionary[resourceAmountData.resourceSO] < resourceAmountData.amount) {
+                Debug.LogError($"Not enough resources! Resource: {resourceAmountData.resourceSO}. Amount currently: {resourceAmountDictionary[resourceAmountData.resourceSO]}. Amount needed: {resourceAmountData.amount}");
             }
 
-            resourceAmountDictionary[resourceAmountData.resourceTypeSO] -= resourceAmountData.amount;
+            resourceAmountDictionary[resourceAmountData.resourceSO] -= resourceAmountData.amount;
         }
 
         OnResourceAmountChanged?.Invoke(this, EventArgs.Empty);
     }
 
-    public void AddResource(ResourceTypeSO resourceTypeSO, int amount) {
-        resourceAmountDictionary[resourceTypeSO] += amount;
+    public void AddResource(ResourceSO resourceSO, int amount) {
+        resourceAmountDictionary[resourceSO] += amount;
 
         OnResourceAmountChanged?.Invoke(this, EventArgs.Empty);
     }
 
-    public int GetResourceAmount(ResourceTypeSO resourceTypeSO) {
-        return resourceAmountDictionary[resourceTypeSO];
+    public int GetResourceAmount(ResourceSO resourceSO) {
+        return resourceAmountDictionary[resourceSO];
     }
 }

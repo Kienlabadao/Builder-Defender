@@ -1,7 +1,7 @@
 [System.Serializable]
 public class ResourceGeneratorData {
     public float generateResourceTimerMax;
-    public ResourceTypeSO resourceTypeSO;
+    public ResourceSO resourceSO;
     public float resourceDetectionRadius;
     public int maxResourceAmount;
 }

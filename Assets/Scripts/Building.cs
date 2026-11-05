@@ -2,7 +2,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(HealthSystem))]
 public class Building : MonoBehaviour, IHasHealth, IDamageable {
-    [SerializeField] private BuildingTypeSO buildingTypeSO;
+    [SerializeField] private BuildingSO buildingSO;
 
     private HealthSystem healthSystem;
 
@@ -22,12 +22,12 @@ public class Building : MonoBehaviour, IHasHealth, IDamageable {
         Destroy(gameObject);
     }
 
-    public BuildingTypeSO GetBuildingTypeSO() {
-        return buildingTypeSO;
+    public BuildingSO GetBuildingSO() {
+        return buildingSO;
     }
 
     public float GetHealthAmountMax() {
-        return buildingTypeSO.healthAmountMax;
+        return buildingSO.healthAmountMax;
     }
 
     public void Damage(float damageAmount) {

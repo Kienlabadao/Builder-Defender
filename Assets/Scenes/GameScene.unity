@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7f5dcae28adc054f9c0e40b5e8d7c09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BuildingManager
-  enemyTypeSO: {fileID: 11400000, guid: c4c7c146845dae244bc4b61d2a9e2482, type: 2}
+  enemySO: {fileID: 11400000, guid: c4c7c146845dae244bc4b61d2a9e2482, type: 2}
   hqBuilding: {fileID: 1298331667}
   maxConstructionRadius: 25
 --- !u!4 &63134342
@@ -2041,7 +2041,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81d78d75b8ba6c248988efad044a40ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ResourcesUI
-  resourceTypeSOList: {fileID: 11400000, guid: 66849ad1fb8677c48859df6d5b8a84aa, type: 2}
+  resourceSOList: {fileID: 11400000, guid: 66849ad1fb8677c48859df6d5b8a84aa, type: 2}
   resourceTemplate: {fileID: 1905290634}
 --- !u!1 &1045386962
 GameObject:
@@ -2433,7 +2433,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60c38370092573b4596a8bfdc1f31458, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ResourceManager
-  resourceTypeListSO: {fileID: 11400000, guid: 66849ad1fb8677c48859df6d5b8a84aa, type: 2}
+  resourceListSO: {fileID: 11400000, guid: 66849ad1fb8677c48859df6d5b8a84aa, type: 2}
+  startingResourceArray:
+  - resourceSO: {fileID: 11400000, guid: dbd428ed04b70af44a3761bf4b277e2c, type: 2}
+    amount: 100
+  - resourceSO: {fileID: 11400000, guid: 5d9a0912be153834f9f640b2c6b2f6b4, type: 2}
+    amount: 100
+  - resourceSO: {fileID: 11400000, guid: 68c27d0918bbe4d45b38ad399e7c4847, type: 2}
+    amount: 100
 --- !u!4 &1099387918
 Transform:
   m_ObjectHideFlags: 0
@@ -3592,7 +3599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 496e00df1e0cd16498bc719a076de756, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BuildingTypeSelectUI
-  buildingTypeListSO: {fileID: 11400000, guid: c1c23ff2364224640b810744b2bc667e, type: 2}
+  buildingListSO: {fileID: 11400000, guid: c1c23ff2364224640b810744b2bc667e, type: 2}
   buttonTemplate: {fileID: 1305759771}
 --- !u!1 &1756934514
 GameObject:

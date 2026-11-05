@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05274ae1bdbfbeb42926d574a6787a8e, type: 3}
+  m_Name: Tower
+  m_EditorClassIdentifier: Assembly-CSharp::BuildingSO
+  buildingName: Tower
+  prefab: {fileID: 3930173642532214381, guid: 51a3c3628783e684388894b4e44b6743, type: 3}
+  sprite: {fileID: 21300000, guid: 3a549cd61f4d79e4b996c9978dac641f, type: 3}
+  constructionResourceCostArray:
+  - resourceSO: {fileID: 11400000, guid: dbd428ed04b70af44a3761bf4b277e2c, type: 2}
+    amount: 40
+  - resourceSO: {fileID: 11400000, guid: 5d9a0912be153834f9f640b2c6b2f6b4, type: 2}
+    amount: 30
+  minConstructionRadius: 7
+  canBePlaced: 1
+  healthAmountMax: 70
+  canGenerateResource: 0
+  resourceGeneratorData:
+    generateResourceTimerMax: 0
+    resourceSO: {fileID: 0}
+    resourceDetectionRadius: 0
+    maxResourceAmount: 0
+  canDefend: 1
+  defenseBuildingData:
+    attackSpeed: 0.3
+    lookForTargetTimerMax: 0.2
+    range: 20
+    baseDamage: 10
+    projectileSO: {fileID: 11400000, guid: c6a29fe4e09990f4994131ba659db3f3, type: 2}

@@ -1,9 +1,9 @@
 using UnityEngine;
 
 public class ResourceNode : MonoBehaviour {
-    [SerializeField] private ResourceTypeSO resourceTypeSO;
+    [SerializeField] private ResourceSO resourceSO;
 
-    public ResourceTypeSO GetResourceTypeSO() {
-        return resourceTypeSO;
+    public ResourceSO GetResourceSO() {
+        return resourceSO;
     }
 }

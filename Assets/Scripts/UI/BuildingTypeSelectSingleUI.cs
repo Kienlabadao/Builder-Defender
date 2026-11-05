@@ -41,8 +41,8 @@ public class BuildingTypeSelectSingleUI : MonoBehaviour {
         onMouseEnterAction?.Invoke();
     }
 
-    public void SetBuildingTypeSO(BuildingTypeSO buildingTypeSO) {
-        iconImage.sprite = buildingTypeSO.sprite;
+    public void SetBuildingSO(BuildingSO buildingSO) {
+        iconImage.sprite = buildingSO.sprite;
 
         iconImage.transform.localScale = new Vector3(spriteDefaultScale, spriteDefaultScale, spriteDefaultScale);
     }

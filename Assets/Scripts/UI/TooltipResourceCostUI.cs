@@ -26,7 +26,7 @@ public class TooltipResourceCostUI : MonoBehaviour {
             TooltipResourceCostSingleUI tooltipResourceCostSingleUI = resourceCostTransform.GetComponent<TooltipResourceCostSingleUI>();
 
             resourceCostTransform.gameObject.SetActive(true);
-            tooltipResourceCostSingleUI.SetResourceTypeSO(resourceAmountData.resourceTypeSO);
+            tooltipResourceCostSingleUI.SetResourceSO(resourceAmountData.resourceSO);
             tooltipResourceCostSingleUI.SetAmount(resourceAmountData.amount);
         }
 

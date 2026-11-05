@@ -19,16 +19,21 @@ public class BuildingGhost : MonoBehaviour {
     }
 
     private void BuildingManager_OnActiveBuildingTypeChanged(object sender, BuildingManager.OnActiveBuildingTypeChangedEventArgs e) {
-        if (e.activeBuildingTypeSO) {
-            Show(e.activeBuildingTypeSO);
+        if (e.activeBuildingSO) {
+            Show(e.activeBuildingSO);
         } else {
             Hide();
         }
     }
 
-    private void Show(BuildingTypeSO buildingTypeSO) {
-        ghostSpriteRenderer.sprite = buildingTypeSO.sprite;
-        generatorEfficiencyUI.Show(buildingTypeSO.resourceGeneratorData);
+    private void Show(BuildingSO buildingSO) {
+        ghostSpriteRenderer.sprite = buildingSO.sprite;
+
+        if (buildingSO.canGenerateResource) {
+            generatorEfficiencyUI.Show(buildingSO.resourceGeneratorData);
+        } else {
+            generatorEfficiencyUI.Hide();
+        }
 
         ghostSpriteRenderer.gameObject.SetActive(true);
     }

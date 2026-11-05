@@ -2,48 +2,48 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BuildingTypeSelectUI : MonoBehaviour {
-    [SerializeField] private BuildingTypeListSO buildingTypeListSO;
+    [SerializeField] private BuildingListSO buildingListSO;
     [SerializeField] private Transform buttonTemplate;
 
     private Transform arrowButton;
-    private Dictionary<BuildingTypeSO, Transform> buildingTypeTransformDictionary;
+    private Dictionary<BuildingSO, Transform> buildingTypeTransformDictionary;
 
     private void Awake() {
-        buildingTypeTransformDictionary = new Dictionary<BuildingTypeSO, Transform>();
+        buildingTypeTransformDictionary = new Dictionary<BuildingSO, Transform>();
 
         arrowButton = InstantiateButtonTransform(null);
 
-        foreach (BuildingTypeSO buildingTypeSO in buildingTypeListSO.buildingTypeSOList) {
-            if (buildingTypeSO.canBePlaced) {
-                Transform buttonTransform = InstantiateButtonTransform(buildingTypeSO);
+        foreach (BuildingSO buildingSO in buildingListSO.buildingSOList) {
+            if (buildingSO.canBePlaced) {
+                Transform buttonTransform = InstantiateButtonTransform(buildingSO);
 
-                buildingTypeTransformDictionary[buildingTypeSO] = buttonTransform;
+                buildingTypeTransformDictionary[buildingSO] = buttonTransform;
             }
         }
     }
 
     private void Start() {
-        UpdateActiveBuildingTypeButton(BuildingManager.Instance.GetActiveBuildingTypeSO());
+        UpdateActiveBuildingTypeButton(BuildingManager.Instance.GetActiveBuildingSO());
 
         buttonTemplate.gameObject.SetActive(false);
     }
 
-    private Transform InstantiateButtonTransform(BuildingTypeSO buildingTypeSO) {
+    private Transform InstantiateButtonTransform(BuildingSO buildingSO) {
         Transform buttonTransform = Instantiate(buttonTemplate, transform);
         BuildingTypeSelectSingleUI buildingTypeSelectSingleUI = buttonTransform.GetComponent<BuildingTypeSelectSingleUI>();
 
         buttonTransform.gameObject.SetActive(true);
 
         buildingTypeSelectSingleUI.SetButtonOnClickAction(() => {
-            BuildingManager.Instance.SetActiveBuildingTypeSO(buildingTypeSO);
+            BuildingManager.Instance.SetActiveBuildingSO(buildingSO);
 
-            UpdateActiveBuildingTypeButton(buildingTypeSO);
+            UpdateActiveBuildingTypeButton(buildingSO);
         });
 
-        if (buildingTypeSO != null) {
-            buildingTypeSelectSingleUI.SetBuildingTypeSO(buildingTypeSO);
+        if (buildingSO != null) {
+            buildingTypeSelectSingleUI.SetBuildingSO(buildingSO);
             buildingTypeSelectSingleUI.SetOnMouseEnterAction(() => {
-                TooltipUI.Instance.Show(buildingTypeSO.buildingName, buildingTypeSO.constructionResourceCostArray);
+                TooltipUI.Instance.Show(buildingSO.buildingName, buildingSO.constructionResourceCostArray);
             });
             buildingTypeSelectSingleUI.SetOnMouseExitAction(() => {
                 TooltipUI.Instance.Hide();
@@ -55,13 +55,13 @@ public class BuildingTypeSelectUI : MonoBehaviour {
         return buttonTransform;
     }
 
-    private void UpdateActiveBuildingTypeButton(BuildingTypeSO activeBuildingTypeSO) {
-        foreach (BuildingTypeSO buildingTypeSO in buildingTypeTransformDictionary.Keys) {
-            Transform buttonTransform = buildingTypeTransformDictionary[buildingTypeSO];
+    private void UpdateActiveBuildingTypeButton(BuildingSO activeBuildingSO) {
+        foreach (BuildingSO buildingSO in buildingTypeTransformDictionary.Keys) {
+            Transform buttonTransform = buildingTypeTransformDictionary[buildingSO];
 
-            buttonTransform.GetComponent<BuildingTypeSelectSingleUI>().SetSelected(buildingTypeSO == activeBuildingTypeSO);
+            buttonTransform.GetComponent<BuildingTypeSelectSingleUI>().SetSelected(buildingSO == activeBuildingSO);
         }
 
-        arrowButton.GetComponent<BuildingTypeSelectSingleUI>().SetSelected(activeBuildingTypeSO == null);
+        arrowButton.GetComponent<BuildingTypeSelectSingleUI>().SetSelected(activeBuildingSO == null);
     }
 }

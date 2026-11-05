@@ -11,7 +11,7 @@ public class ResourceGeneratorUI : MonoBehaviour {
     private void Start() {
         ResourceGeneratorData resourceGeneratorData = resourceGenerator.GetResourceGeneratorData();
 
-        resourceIcon.sprite = resourceGeneratorData.resourceTypeSO.sprite;
+        resourceIcon.sprite = resourceGeneratorData.resourceSO.sprite;
         amountGeneratedPerSecondText.text = $"{resourceGenerator.GetAmountGeneratedPerSecond().ToString("0.#")}/s";
     }
 

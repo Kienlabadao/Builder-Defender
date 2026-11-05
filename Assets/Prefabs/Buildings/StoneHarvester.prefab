@@ -13,6 +13,10 @@ PrefabInstance:
       value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 6232526791742827595, guid: c49f02f49ed3b43498c328dbf9bae047, type: 3}
+      propertyPath: buildingSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 15a615467f0936144bb7a8d8509869d4, type: 2}
+    - target: {fileID: 6232526791742827595, guid: c49f02f49ed3b43498c328dbf9bae047, type: 3}
       propertyPath: buildingTypeSO
       value: 
       objectReference: {fileID: 11400000, guid: 15a615467f0936144bb7a8d8509869d4, type: 2}

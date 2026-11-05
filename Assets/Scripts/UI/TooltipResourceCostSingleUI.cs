@@ -6,8 +6,8 @@ public class TooltipResourceCostSingleUI : MonoBehaviour {
     [SerializeField] private Image iconImage;
     [SerializeField] private TextMeshProUGUI amountText;
 
-    public void SetResourceTypeSO(ResourceTypeSO resourceTypeSO) {
-        iconImage.sprite = resourceTypeSO.sprite;
+    public void SetResourceSO(ResourceSO resourceSO) {
+        iconImage.sprite = resourceSO.sprite;
     }
 
     public void SetAmount(int amount) {
