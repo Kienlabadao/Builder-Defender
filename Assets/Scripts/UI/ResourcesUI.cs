@@ -14,7 +14,7 @@ public class ResourcesUI : MonoBehaviour {
     private void Start() {
         ResourceManager.Instance.OnResourceAmountChanged += ResourceManager_OnResourceAmountChanged;
 
-        foreach (ResourceSO resourceSO in resourceSOList.resourceSOList) {
+        foreach (ResourceSO resourceSO in resourceSOList.resourceSOArray) {
             Transform resourceTransform = Instantiate(resourceTemplate, transform);
             ResourcesSingleUI resourcesSingleUI = resourceTransform.GetComponent<ResourcesSingleUI>();
 

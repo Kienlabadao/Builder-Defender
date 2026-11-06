@@ -67,7 +67,7 @@ public class TooltipUI : MonoBehaviour {
     }
 
     private void SetTooltipText(string text) {
-        tooltipText.SetText(text);
+        tooltipText.text = text;
 
         tooltipTextSize = tooltipText.GetPreferredValues();
 

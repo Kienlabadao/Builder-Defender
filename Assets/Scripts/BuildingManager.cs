@@ -1,7 +1,6 @@
 using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.InputSystem;
 
 public class BuildingManager : MonoBehaviour {
     public static BuildingManager Instance { get; private set; }
@@ -11,7 +10,6 @@ public class BuildingManager : MonoBehaviour {
         public BuildingSO activeBuildingSO;
     }
 
-    [SerializeField] private EnemySO enemySO;
     [SerializeField] private Building hqBuilding;
     [SerializeField] private float maxConstructionRadius = 25f;
 
@@ -47,11 +45,6 @@ public class BuildingManager : MonoBehaviour {
                     TooltipUI.Instance.Show("Cannot afford!", activeBuildingSO.constructionResourceCostArray, true);
                 }
             }
-        }
-
-        if (Keyboard.current.tKey.wasPressedThisFrame) {
-            Vector3 enemySpawnPosition = UtilsClass.GetMouseWorldPosition() + UtilsClass.GetRandomDir() * 5f;
-            Enemy.SpawnEnemy(enemySO, enemySpawnPosition);
         }
     }
 

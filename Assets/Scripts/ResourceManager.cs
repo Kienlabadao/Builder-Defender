@@ -20,7 +20,7 @@ public class ResourceManager : MonoBehaviour {
 
         resourceAmountDictionary = new Dictionary<ResourceSO, int>();
 
-        foreach (ResourceSO resourceSO in resourceListSO.resourceSOList) {
+        foreach (ResourceSO resourceSO in resourceListSO.resourceSOArray) {
             resourceAmountDictionary[resourceSO] = 0;
         }
 
