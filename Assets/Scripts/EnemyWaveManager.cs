@@ -8,6 +8,12 @@ public class EnemyWaveManager : MonoBehaviour {
     public event EventHandler OnWaveNumberChanged;
     public event EventHandler OnStateChanged;
 
+    public enum State {
+        WaitingToSpawnNextWave,
+        SpawningWave,
+        GameOver,
+    }
+
     [SerializeField] private WaveSpawningListSO waveSpawningListSO;
     [SerializeField] private Transform[] spawnPositionTransformArray;
     [SerializeField] private Transform nextWaveSpawnPositionTransform;
@@ -16,12 +22,6 @@ public class EnemyWaveManager : MonoBehaviour {
     [SerializeField] private float nextWaveSpawnTimerMax = 10f;
     [SerializeField] private float nextEnemySpawnTimerMaxOffset = .2f;
     [SerializeField] private float enemySpawnPositionMaxOffset = 10f;
-
-    public enum State {
-        WaitingToSpawnNextWave,
-        SpawningWave,
-        GameOver,
-    }
 
     private State state = State.WaitingToSpawnNextWave;
     private float nextWaveSpawnTimer;

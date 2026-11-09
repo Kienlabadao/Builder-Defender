@@ -2,21 +2,21 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(HealthSystem))]
-public class Enemy : MonoBehaviour, IHasHealth, IDamageable {
+[RequireComponent(typeof(TargetingSystem))]
+public class Enemy : MonoBehaviour, IHasHealth, IDamageable, ITargetable, IRequiresTargetSystem {
     private const float TARGET_MAX_RADIUS = 10f;
 
     [SerializeField] private EnemySO enemySO;
 
     private HealthSystem healthSystem;
+    private TargetingSystem targetingSystem;
     private Rigidbody2D rigidbody2D;
     private Transform targetTransform;
-    private float lookForTargetTimer;
 
     private void Awake() {
         rigidbody2D = GetComponent<Rigidbody2D>();
         healthSystem = GetComponent<HealthSystem>();
-
-        lookForTargetTimer = Random.Range(0f, enemySO.lookForTargetTimerMax);
+        targetingSystem = GetComponent<TargetingSystem>();
     }
 
     private void Start() {
@@ -60,31 +60,9 @@ public class Enemy : MonoBehaviour, IHasHealth, IDamageable {
     }
 
     private void HandleTargeting() {
-        lookForTargetTimer -= Time.deltaTime;
-
-        if (lookForTargetTimer <= 0f) {
-            lookForTargetTimer = enemySO.lookForTargetTimerMax;
-
-            LookForTarget();
-        }
-    }
-
-    private void LookForTarget() {
-        Collider2D[] collider2DArray = Physics2D.OverlapCircleAll(transform.position, TARGET_MAX_RADIUS);
-
-        foreach (Collider2D collider2D in collider2DArray) {
-            if (collider2D.gameObject.TryGetComponent(out Building building)) {
-                if (targetTransform == null) {
-                    targetTransform = building.transform;
-                } else if (Vector3.Distance(transform.position, building.transform.position) <
-                    Vector3.Distance(transform.position, targetTransform.position)) {
-                    targetTransform = building.transform;
-                }
-            }
-        }
-
-        if (targetTransform == null) {
-            // No targets wuthin range
+        if (targetingSystem.GetCurrentTarget() is Building building && building != null) {
+            targetTransform = building.transform;
+        } else {
             targetTransform = BuildingManager.Instance.GetHQBuilding().transform;
         }
     }
@@ -97,10 +75,30 @@ public class Enemy : MonoBehaviour, IHasHealth, IDamageable {
         healthSystem.Damage(damageAmount);
     }
 
+    public Vector3 GetTargetPosition() {
+        return transform.position;
+    }
+
     public static Enemy SpawnEnemy(EnemySO enemySO, Vector3 position) {
         Transform enemyTransform = Instantiate(enemySO.prefab, position, Quaternion.identity);
         Enemy enemy = enemyTransform.GetComponent<Enemy>();
 
         return enemy;
+    }
+
+    public Transform GetTargetSearchOrigin() {
+        return transform;
+    }
+
+    public float GetMaxRange() {
+        return TARGET_MAX_RADIUS;
+    }
+
+    public TargetType GetTargetType() {
+        return TargetType.Building;
+    }
+
+    public float GetTargetScanInterval() {
+        return enemySO.lookForTargetTimerMax;
     }
 }

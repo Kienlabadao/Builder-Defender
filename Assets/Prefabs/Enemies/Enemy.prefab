@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3416487428555759176}
   - component: {fileID: 5847236015784222648}
+  - component: {fileID: 3024759626082389637}
   - component: {fileID: 3282030598209719475}
   - component: {fileID: 4109314861309000505}
   - component: {fileID: 3137892692346604650}
@@ -50,6 +51,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   enemySO: {fileID: 11400000, guid: c4c7c146845dae244bc4b61d2a9e2482, type: 2}
+--- !u!114 &3024759626082389637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4308009275733531811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 511b0fa89fe32d442830379ca859e3af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetingSystem
+  requiresTargetSystemGameObject: {fileID: 4308009275733531811}
 --- !u!114 &3282030598209719475
 MonoBehaviour:
   m_ObjectHideFlags: 0

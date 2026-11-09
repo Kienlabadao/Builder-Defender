@@ -121,6 +121,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8730836509462929661, guid: c49f02f49ed3b43498c328dbf9bae047, type: 3}
       insertIndex: 2
       addedObject: {fileID: 3716008845691945259}
+    - targetCorrespondingSourceObject: {fileID: 8730836509462929661, guid: c49f02f49ed3b43498c328dbf9bae047, type: 3}
+      insertIndex: 3
+      addedObject: {fileID: 4006585326688588794}
   m_SourcePrefab: {fileID: 100100000, guid: c49f02f49ed3b43498c328dbf9bae047, type: 3}
 --- !u!1 &8091675429229446218 stripped
 GameObject:
@@ -140,6 +143,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DefenseBuilding
   projectileSpawnPosition: {fileID: 6326188042127719122}
+--- !u!114 &4006585326688588794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8091675429229446218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 511b0fa89fe32d442830379ca859e3af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetingSystem
+  requiresTargetSystemGameObject: {fileID: 8091675429229446218}
 --- !u!4 &8232115594770846146 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8889850469790512501, guid: c49f02f49ed3b43498c328dbf9bae047, type: 3}

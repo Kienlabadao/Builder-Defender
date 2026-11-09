@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(HealthSystem))]
-public class Building : MonoBehaviour, IHasHealth, IDamageable {
+public class Building : MonoBehaviour, IHasHealth, IDamageable, ITargetable {
     [SerializeField] private BuildingSO buildingSO;
 
     private HealthSystem healthSystem;
@@ -32,5 +32,9 @@ public class Building : MonoBehaviour, IHasHealth, IDamageable {
 
     public void Damage(float damageAmount) {
         healthSystem.Damage(damageAmount);
+    }
+
+    public Vector3 GetTargetPosition() {
+        return transform.position;
     }
 }

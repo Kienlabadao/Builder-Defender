@@ -1,7 +1,8 @@
 using TMPro;
 using UnityEngine;
 
-public class EnemyWaveUI : MonoBehaviour {
+[RequireComponent(typeof(TargetingSystem))]
+public class EnemyWaveUI : MonoBehaviour, IRequiresTargetSystem {
     private const float MAX_SEARCH_RADIUS = 9999f;
 
     [SerializeField] private TextMeshProUGUI waveNumberText;
@@ -12,7 +13,12 @@ public class EnemyWaveUI : MonoBehaviour {
     [SerializeField] private float enemyClosestPositionIndicatorPositionOffset = 250f;
     [SerializeField] private float indicatorHideOffset = 1.5f;
 
+    private TargetingSystem targetingSystem;
     private bool isWaitingToSpawnNextWave = true;
+
+    private void Awake() {
+        targetingSystem = GetComponent<TargetingSystem>();
+    }
 
     private void Start() {
         EnemyWaveManager.Instance.OnStateChanged += EnemyWaveManager_OnStateChanged;
@@ -61,9 +67,7 @@ public class EnemyWaveUI : MonoBehaviour {
     }
 
     private void HandleEnemyClosestPositionIndicatorRectTransform() {
-        Enemy closestEnemy = LookForClosestEnemy();
-
-        if (closestEnemy != null) {
+        if (targetingSystem.GetCurrentTarget() is Enemy closestEnemy && closestEnemy != null) {
             Vector3 dirToClosestEnemy = (closestEnemy.transform.position - Camera.main.transform.position).normalized;
             float distanceToClosestEnemy = Vector3.Distance(closestEnemy.transform.position, Camera.main.transform.position);
 
@@ -73,24 +77,6 @@ public class EnemyWaveUI : MonoBehaviour {
         } else {
             enemyClosestPositionIndicatorRectTransform.gameObject.SetActive(false);
         }
-    }
-
-    private Enemy LookForClosestEnemy() {
-        Collider2D[] collider2DArray = Physics2D.OverlapCircleAll(Camera.main.transform.position, MAX_SEARCH_RADIUS);
-        Enemy targetEnemy = null;
-
-        foreach (Collider2D collider2D in collider2DArray) {
-            if (collider2D.gameObject.TryGetComponent(out Enemy enemy)) {
-                if (targetEnemy == null) {
-                    targetEnemy = enemy;
-                } else if (Vector3.Distance(transform.position, enemy.transform.position) <
-                    Vector3.Distance(transform.position, targetEnemy.transform.position)) {
-                    targetEnemy = enemy;
-                }
-            }
-        }
-
-        return targetEnemy;
     }
 
     private void SetWaveNumberText(int waveNumber) {
@@ -109,5 +95,21 @@ public class EnemyWaveUI : MonoBehaviour {
     private void HideWaitingToSpawnNextWaveVisual() {
         waveMessageText.gameObject.SetActive(false);
         enemyWaveSpawnPositionIndicatorRectTransform.gameObject.SetActive(false);
+    }
+
+    public Transform GetTargetSearchOrigin() {
+        return Camera.main.transform;
+    }
+
+    public float GetMaxRange() {
+        return MAX_SEARCH_RADIUS;
+    }
+
+    public TargetType GetTargetType() {
+        return TargetType.Enemy;
+    }
+
+    public float GetTargetScanInterval() {
+        return 0f;
     }
 }
