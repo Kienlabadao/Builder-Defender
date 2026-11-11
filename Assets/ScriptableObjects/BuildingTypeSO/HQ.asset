@@ -17,6 +17,7 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 7030b8e3eb49e8440ae8eb3ec8b45d05, type: 3}
   constructionResourceCostArray: []
   minConstructionRadius: 0
+  constructionTimerMax: 5
   canBePlaced: 0
   healthAmountMax: 150
   canGenerateResource: 1

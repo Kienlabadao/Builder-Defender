@@ -1,12 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ProgressBarUI : MonoBehaviour {
-    [SerializeField] private Image barImage;
+public class ProgressUI : MonoBehaviour {
+    [SerializeField] private Image fillImage;
     [SerializeField] private bool hideOnFilledAndNoFill = true;
 
     private void Awake() {
-        barImage.fillAmount = 0f;
+        fillImage.fillAmount = 0f;
     }
 
     private void Start() {
@@ -22,7 +22,7 @@ public class ProgressBarUI : MonoBehaviour {
     }
 
     public void SetProgressAmount(float progressNormalized) {
-        barImage.fillAmount = progressNormalized;
+        fillImage.fillAmount = progressNormalized;
 
         if (hideOnFilledAndNoFill && (progressNormalized == 0f || progressNormalized == 1f)) {
             Hide();

@@ -56,7 +56,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ResourceGeneratorUI
   resourceGenerator: {fileID: 3448621438558714683}
-  progressBarUI: {fileID: 8361167572951467461}
+  progressUI: {fileID: 8361167572951467461}
   resourceIcon: {fileID: 5343978804444696559}
   amountGeneratedPerSecondText: {fileID: 4690575834686435210}
 --- !u!223 &5843018456392521554

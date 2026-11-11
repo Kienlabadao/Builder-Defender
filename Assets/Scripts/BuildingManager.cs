@@ -34,10 +34,12 @@ public class BuildingManager : MonoBehaviour {
             if (!EventSystem.current.IsPointerOverGameObject() &&
                 activeBuildingSO != null) {
                 if (ResourceManager.Instance.CanAfford(activeBuildingSO.constructionResourceCostArray)) {
-                    if (CanSpawnBuilding(activeBuildingSO, UtilsClass.GetMouseWorldPosition(), out string errorMessage)) {
-                        Instantiate(activeBuildingSO.prefab, UtilsClass.GetMouseWorldPosition(), Quaternion.identity);
+                    Vector3 mouseWorldPosition = UtilsClass.GetMouseWorldPosition();
 
+                    if (CanSpawnBuilding(activeBuildingSO, mouseWorldPosition, out string errorMessage)) {
                         ResourceManager.Instance.SpendResource(activeBuildingSO.constructionResourceCostArray);
+
+                        BuildingConstruction.SpawnBuildingConstruction(mouseWorldPosition, activeBuildingSO);
                     } else {
                         TooltipUI.Instance.Show(errorMessage, true);
                     }
@@ -75,11 +77,20 @@ public class BuildingManager : MonoBehaviour {
 
         collider2DArray = Physics2D.OverlapCircleAll(position, buildingSO.minConstructionRadius);
         foreach (Collider2D collider2D in collider2DArray) {
-            if (collider2D.TryGetComponent(out Building building) &&
-                building.GetBuildingSO() == buildingSO) {
-                errorMessage = "Too close to another building of the same type!";
-                return false;
+            if (collider2D.TryGetComponent(out Building building)) {
+                if (building.GetBuildingSO() != buildingSO) {
+                    continue;
+                }
+            } else if (collider2D.TryGetComponent(out BuildingConstruction buildingConstruction)) {
+                if (buildingConstruction.GetBuildingSO() != buildingSO) {
+                    continue;
+                }
+            } else {
+                continue;
             }
+
+            errorMessage = "Too close to another building of the same type!";
+            return false;
         }
 
         collider2DArray = Physics2D.OverlapCircleAll(position, maxConstructionRadius);

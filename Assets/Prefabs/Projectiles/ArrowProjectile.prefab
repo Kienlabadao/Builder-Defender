@@ -58,7 +58,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: e84beb3e68777f44199334b1354a857a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -140,6 +140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ArrowProjectile
   projectileSO: {fileID: 11400000, guid: c6a29fe4e09990f4994131ba659db3f3, type: 2}
+  despawnTimerMax: 2
 --- !u!61 &6577413559561688883
 BoxCollider2D:
   m_ObjectHideFlags: 0

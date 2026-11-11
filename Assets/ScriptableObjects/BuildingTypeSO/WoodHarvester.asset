@@ -19,6 +19,7 @@ MonoBehaviour:
   - resourceSO: {fileID: 11400000, guid: dbd428ed04b70af44a3761bf4b277e2c, type: 2}
     amount: 10
   minConstructionRadius: 7
+  constructionTimerMax: 5
   canBePlaced: 1
   healthAmountMax: 100
   canGenerateResource: 1
@@ -27,3 +28,10 @@ MonoBehaviour:
     resourceSO: {fileID: 11400000, guid: dbd428ed04b70af44a3761bf4b277e2c, type: 2}
     resourceDetectionRadius: 7
     maxResourceAmount: 7
+  canDefend: 0
+  defenseBuildingData:
+    attackSpeed: 0.3
+    lookForTargetTimerMax: 0.2
+    range: 20
+    baseDamage: 10
+    projectileSO: {fileID: 0}

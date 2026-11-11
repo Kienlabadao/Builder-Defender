@@ -326,6 +326,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3558319436372859905, guid: bfe9173662a60744d8e84f520a035770, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3558319436372859905, guid: bfe9173662a60744d8e84f520a035770, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3558319436372859911, guid: bfe9173662a60744d8e84f520a035770, type: 3}
       propertyPath: m_Name
       value: pfEnemyVisual
@@ -333,10 +341,32 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3558319436372859911, guid: bfe9173662a60744d8e84f520a035770, type: 3}
+      insertIndex: 2
+      addedObject: {fileID: 917452982681544821}
   m_SourcePrefab: {fileID: 100100000, guid: bfe9173662a60744d8e84f520a035770, type: 3}
 --- !u!4 &3379419815229145258 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3558319436372859904, guid: bfe9173662a60744d8e84f520a035770, type: 3}
   m_PrefabInstance: {fileID: 2271974505380912298}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3379419815229145261 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3558319436372859911, guid: bfe9173662a60744d8e84f520a035770, type: 3}
+  m_PrefabInstance: {fileID: 2271974505380912298}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &917452982681544821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3379419815229145261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e918e50ebc8a4e548926de7cb4784a59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpritePositionSortingOrder
+  runOnce: 0
+  positionOffset: 0

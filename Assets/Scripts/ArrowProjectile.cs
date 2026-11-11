@@ -30,7 +30,15 @@ public class ArrowProjectile : MonoBehaviour {
         lastMoveDir = moveDir;
 
         transform.position += projectileSO.projectileSpeed * Time.deltaTime * moveDir;
+        HandleRotation(moveDir);
+    }
+
+    private void HandleRotation(Vector3 moveDir) {
         transform.eulerAngles = new Vector3(0, 0, UtilsClass.GetAngleFromVector(moveDir));
+    }
+
+    private void InitializeRotation(Enemy targetEnemy) {
+        HandleRotation((targetEnemy.transform.position - transform.position).normalized);
     }
 
     private void HandleDespawn() {
@@ -67,6 +75,7 @@ public class ArrowProjectile : MonoBehaviour {
 
         arrowProjectile.SetTarget(targetEnemy);
         arrowProjectile.SetBaseDamage(baseDamage);
+        arrowProjectile.InitializeRotation(targetEnemy);
 
         return arrowProjectile;
     }

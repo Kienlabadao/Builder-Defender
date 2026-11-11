@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class ResourceGeneratorUI : MonoBehaviour {
     [SerializeField] private ResourceGenerator resourceGenerator;
-    [SerializeField] private ProgressBarUI progressBarUI;
+    [SerializeField] private ProgressUI progressUI;
     [SerializeField] private Image resourceIcon;
     [SerializeField] private TextMeshProUGUI amountGeneratedPerSecondText;
 
@@ -16,6 +16,6 @@ public class ResourceGeneratorUI : MonoBehaviour {
     }
 
     private void Update() {
-        progressBarUI.SetProgressAmount(1 - resourceGenerator.GetGenerateResourceTimerNormalized());
+        progressUI.SetProgressAmount(1 - resourceGenerator.GetGenerateResourceTimerNormalized());
     }
 }

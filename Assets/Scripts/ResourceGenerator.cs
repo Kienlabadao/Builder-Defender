@@ -24,6 +24,7 @@ public class ResourceGenerator : MonoBehaviour {
             float timerReduction = MAX_TIMER_REDUCTION * ((float)(nearbyResourceNodeAmount - 1) / (maxResourceAmount - 1));
 
             generateResourceTimerMax = resourceGeneratorData.generateResourceTimerMax * (1 - timerReduction);
+            generateResourceTimer = generateResourceTimerMax;
         }
     }
 

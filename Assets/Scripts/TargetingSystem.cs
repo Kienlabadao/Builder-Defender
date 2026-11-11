@@ -84,8 +84,6 @@ public class TargetingSystem : MonoBehaviour {
     }
 
     public ITargetable GetCurrentTarget() {
-        Debug.Log(targetSearchOrigin.position);
-        Debug.Log(currentTarget);
         return currentTarget;
     }
 }

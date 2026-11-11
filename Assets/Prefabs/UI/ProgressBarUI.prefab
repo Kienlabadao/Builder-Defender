@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dedfba51aec4ff43ba955fdbb378192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ProgressBarUI
-  barImage: {fileID: 4937235078618953804}
+  fillImage: {fileID: 4937235078618953804}
   hideOnFilledAndNoFill: 1
 --- !u!1 &3550543294452841462
 GameObject:
