@@ -19,7 +19,7 @@ public static class UtilsClass {
     }
 
     public static Vector3 GetMouseWorldPosition() {
-        Vector3 mouseWorldPosition = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+        Vector3 mouseWorldPosition = Camera.main.ScreenToWorldPoint(Pointer.current.position.ReadValue());
         mouseWorldPosition.z = 0;
 
         return mouseWorldPosition;

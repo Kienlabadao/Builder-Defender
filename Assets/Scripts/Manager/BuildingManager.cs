@@ -107,6 +107,12 @@ public class BuildingManager : MonoBehaviour {
     }
 
     public void SetActiveBuildingSO(BuildingSO buildingSO) {
+        if (buildingSO != null && !buildingSO.canBePlaced) {
+            Debug.LogWarning($"Building {buildingSO.name} aren't allowed to be placed!");
+
+            return;
+        }
+
         activeBuildingSO = buildingSO;
 
         OnActiveBuildingTypeChanged?.Invoke(this, new OnActiveBuildingTypeChangedEventArgs {
@@ -120,5 +126,9 @@ public class BuildingManager : MonoBehaviour {
 
     public Building GetHQBuilding() {
         return hqBuilding;
+    }
+
+    public bool IsInBuildMode() {
+        return activeBuildingSO != null;
     }
 }

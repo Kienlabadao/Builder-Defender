@@ -9,6 +9,7 @@ public class BuildingSO : ScriptableObject {
     public float minConstructionRadius = 7f;
     public float constructionTimerMax = 5f;
     public bool canBePlaced = true;
+    public bool canBeDemolished = true;
 
     public float healthAmountMax = 100f;
 

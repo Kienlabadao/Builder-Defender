@@ -19,6 +19,7 @@ MonoBehaviour:
   minConstructionRadius: 0
   constructionTimerMax: 5
   canBePlaced: 0
+  canBeDemolished: 0
   healthAmountMax: 150
   canGenerateResource: 1
   resourceGeneratorData:

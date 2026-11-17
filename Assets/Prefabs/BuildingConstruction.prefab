@@ -219,7 +219,6 @@ GameObject:
   - component: {fileID: 7860572869278822812}
   - component: {fileID: 6193653411845546475}
   - component: {fileID: 1507957201060209442}
-  - component: {fileID: 7353555938214017638}
   m_Layer: 0
   m_Name: BuildingConstructionVisual
   m_TagString: Untagged
@@ -300,8 +299,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 332793093
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 793ca27a5a3378149aaa12abe85933f4, type: 3}
@@ -315,20 +314,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
---- !u!114 &7353555938214017638
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2428038351092617507}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e918e50ebc8a4e548926de7cb4784a59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SpritePositionSortingOrder
-  runOnce: 1
-  positionOffset: -2.5
 --- !u!1 &7143923509800844116
 GameObject:
   m_ObjectHideFlags: 0

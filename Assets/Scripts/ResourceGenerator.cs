@@ -1,8 +1,12 @@
+using System;
 using UnityEngine;
 
 [RequireComponent(typeof(Building))]
 public class ResourceGenerator : MonoBehaviour {
     private const float MAX_TIMER_REDUCTION = .5f;
+
+    public event EventHandler OnInitializeCompleted;
+    public event EventHandler OnGeneratorStopped;
 
     private ResourceGeneratorData resourceGeneratorData;
     private float generateResourceTimer;
@@ -26,6 +30,8 @@ public class ResourceGenerator : MonoBehaviour {
             generateResourceTimerMax = resourceGeneratorData.generateResourceTimerMax * (1 - timerReduction);
             generateResourceTimer = generateResourceTimerMax;
         }
+
+        OnInitializeCompleted?.Invoke(this, EventArgs.Empty);
     }
 
     private void Update() {
@@ -56,6 +62,10 @@ public class ResourceGenerator : MonoBehaviour {
         }
 
         return 1f / generateResourceTimerMax;
+    }
+
+    public bool IsEnabled() {
+        return enabled;
     }
 
     public static int GetNearbyResourceNodeAmount(ResourceGeneratorData resourceGeneratorData, Vector3 position) {

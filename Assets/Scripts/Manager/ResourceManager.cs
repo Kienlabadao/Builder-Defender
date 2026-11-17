@@ -9,6 +9,7 @@ public class ResourceManager : MonoBehaviour {
 
     [SerializeField] private ResourceListSO resourceListSO;
     [SerializeField] private ResourceAmountData[] startingResourceArray;
+    [SerializeField] private float refundBuildingResourcePercentage = .6f;
 
     private Dictionary<ResourceSO, int> resourceAmountDictionary;
 
@@ -65,5 +66,14 @@ public class ResourceManager : MonoBehaviour {
 
     public int GetResourceAmount(ResourceSO resourceSO) {
         return resourceAmountDictionary[resourceSO];
+    }
+
+    public void RefundBuilding(BuildingSO buildingSO) {
+        foreach (ResourceAmountData resourceAmountData in buildingSO.constructionResourceCostArray) {
+            AddResource(
+                resourceAmountData.resourceSO,
+                Mathf.FloorToInt(resourceAmountData.amount * refundBuildingResourcePercentage)
+            );
+        }
     }
 }

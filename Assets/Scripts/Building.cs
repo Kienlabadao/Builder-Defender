@@ -1,7 +1,13 @@
+using System;
 using UnityEngine;
 
 [RequireComponent(typeof(HealthSystem))]
-public class Building : MonoBehaviour, IHasHealth, IDamageable, ITargetable {
+public class Building : MonoBehaviour, IHasHealth, IDamageable, ITargetable, ISelectable {
+    public event EventHandler OnBuildingUnhovered;
+    public event EventHandler OnBuildingHovered;
+    public event EventHandler OnBuildingSelected;
+    public event EventHandler OnBuildingDeselected;
+
     [SerializeField] private BuildingSO buildingSO;
 
     private HealthSystem healthSystem;
@@ -26,6 +32,10 @@ public class Building : MonoBehaviour, IHasHealth, IDamageable, ITargetable {
         return buildingSO;
     }
 
+    public bool CanBeDemolished() {
+        return GetBuildingSO().canBeDemolished;
+    }
+
     public float GetHealthAmountMax() {
         return buildingSO.healthAmountMax;
     }
@@ -36,5 +46,21 @@ public class Building : MonoBehaviour, IHasHealth, IDamageable, ITargetable {
 
     public Vector3 GetTargetPosition() {
         return transform.position;
+    }
+
+    public void Hover() {
+        OnBuildingHovered?.Invoke(this, EventArgs.Empty);
+    }
+
+    public void Unhover() {
+        OnBuildingUnhovered?.Invoke(this, EventArgs.Empty);
+    }
+
+    public void Select() {
+        OnBuildingSelected?.Invoke(this, EventArgs.Empty);
+    }
+
+    public void Deselect() {
+        OnBuildingDeselected?.Invoke(this, EventArgs.Empty);
     }
 }
