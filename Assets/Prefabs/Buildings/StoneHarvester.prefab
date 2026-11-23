@@ -48,6 +48,14 @@ PrefabInstance:
       propertyPath: m_Offset.x
       value: -0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 5972003308039446908, guid: c49f02f49ed3b43498c328dbf9bae047, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972003308039446908, guid: c49f02f49ed3b43498c328dbf9bae047, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6232526791742827595, guid: c49f02f49ed3b43498c328dbf9bae047, type: 3}
       propertyPath: buildingSO
       value: 

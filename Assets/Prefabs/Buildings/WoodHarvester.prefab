@@ -416,6 +416,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1594443946285537226, guid: c49f02f49ed3b43498c328dbf9bae047, type: 3}
+      propertyPath: m_Name
+      value: BuildingRadiusCircle
+      objectReference: {fileID: 0}
     - target: {fileID: 2704863275848778973, guid: c49f02f49ed3b43498c328dbf9bae047, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 3.5
@@ -479,6 +483,14 @@ PrefabInstance:
     - target: {fileID: 5044133821200960573, guid: c49f02f49ed3b43498c328dbf9bae047, type: 3}
       propertyPath: m_Offset.x
       value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972003308039446908, guid: c49f02f49ed3b43498c328dbf9bae047, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972003308039446908, guid: c49f02f49ed3b43498c328dbf9bae047, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6232526791742827595, guid: c49f02f49ed3b43498c328dbf9bae047, type: 3}
       propertyPath: buildingSO

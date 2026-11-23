@@ -84,6 +84,18 @@ PrefabInstance:
       propertyPath: buildingSO
       value: 
       objectReference: {fileID: 11400000, guid: 73dbf462228845742bec24f23f852f14, type: 2}
+    - target: {fileID: 2621129348652649281, guid: 15e555574b793274581b5dd511c1306e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621129348652649281, guid: 15e555574b793274581b5dd511c1306e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621129348652649281, guid: 15e555574b793274581b5dd511c1306e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3101066275718528249, guid: 15e555574b793274581b5dd511c1306e, type: 3}
       propertyPath: m_Size.x
       value: 4.7

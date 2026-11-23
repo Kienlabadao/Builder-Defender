@@ -21,7 +21,7 @@ public class SelectionManager : MonoBehaviour {
 
     private void Start() {
         GameInput.Instance.OnInteractAction += GameInput_OnInteractAction;
-        BuildingManager.Instance.OnActiveBuildingTypeChanged += BuildingManager_OnActiveBuildingTypeChanged;
+        BuildingManager.Instance.OnBuildModeActive += BuildingManager_OnBuildModeActive;
     }
 
     private void Update() {
@@ -39,14 +39,12 @@ public class SelectionManager : MonoBehaviour {
 
     private void OnDestroy() {
         GameInput.Instance.OnInteractAction -= GameInput_OnInteractAction;
-        BuildingManager.Instance.OnActiveBuildingTypeChanged -= BuildingManager_OnActiveBuildingTypeChanged;
+        BuildingManager.Instance.OnBuildModeActive -= BuildingManager_OnBuildModeActive;
     }
 
-    private void BuildingManager_OnActiveBuildingTypeChanged(object sender, BuildingManager.OnActiveBuildingTypeChangedEventArgs e) {
-        if (BuildingManager.Instance.IsInBuildMode()) {
-            SetHoveredObject(null);
-            HandleSelection();
-        }
+    private void BuildingManager_OnBuildModeActive(object sender, BuildingManager.OnBuildModeActiveEventArgs e) {
+        SetHoveredObject(null);
+        HandleSelection();
     }
 
     private void GameInput_OnInteractAction(object sender, EventArgs e) {
@@ -54,7 +52,7 @@ public class SelectionManager : MonoBehaviour {
     }
 
     private void HandleHovering() {
-        if (!BuildingManager.Instance.IsInBuildMode()) {
+        if (!BuildingManager.Instance.IsBuildModeActive()) {
             Collider2D collider2D = Physics2D.OverlapPoint(
                 UtilsClass.GetMouseWorldPosition(),
                 selectionLayerMask

@@ -5,10 +5,11 @@ using UnityEngine.EventSystems;
 public class BuildingManager : MonoBehaviour {
     public static BuildingManager Instance { get; private set; }
 
-    public event EventHandler<OnActiveBuildingTypeChangedEventArgs> OnActiveBuildingTypeChanged;
-    public class OnActiveBuildingTypeChangedEventArgs {
+    public event EventHandler<OnBuildModeActiveEventArgs> OnBuildModeActive;
+    public class OnBuildModeActiveEventArgs {
         public BuildingSO activeBuildingSO;
     }
+    public event EventHandler OnBuildModeInactive;
 
     [SerializeField] private Building hqBuilding;
     [SerializeField] private float maxConstructionRadius = 25f;
@@ -106,6 +107,15 @@ public class BuildingManager : MonoBehaviour {
         return false;
     }
 
+    public bool CanSpawnBuildingAtPosition(Vector3 position, out string errorMessage) {
+        if (activeBuildingSO) {
+            return CanSpawnBuilding(activeBuildingSO, position, out errorMessage);
+        } else {
+            errorMessage = "No currently active building!";
+            return false;
+        }
+    }
+
     public void SetActiveBuildingSO(BuildingSO buildingSO) {
         if (buildingSO != null && !buildingSO.canBePlaced) {
             Debug.LogWarning($"Building {buildingSO.name} aren't allowed to be placed!");
@@ -115,9 +125,14 @@ public class BuildingManager : MonoBehaviour {
 
         activeBuildingSO = buildingSO;
 
-        OnActiveBuildingTypeChanged?.Invoke(this, new OnActiveBuildingTypeChangedEventArgs {
-            activeBuildingSO = activeBuildingSO
-        });
+        if (activeBuildingSO) {
+            OnBuildModeActive?.Invoke(this, new OnBuildModeActiveEventArgs {
+                activeBuildingSO = activeBuildingSO
+            });
+        } else {
+            OnBuildModeInactive?.Invoke(this, EventArgs.Empty);
+        }
+
     }
 
     public BuildingSO GetActiveBuildingSO() {
@@ -128,7 +143,19 @@ public class BuildingManager : MonoBehaviour {
         return hqBuilding;
     }
 
-    public bool IsInBuildMode() {
+    public bool IsBuildModeActive() {
         return activeBuildingSO != null;
+    }
+
+    public bool IsActiveBuildingHarvestable() {
+        return activeBuildingSO != null && activeBuildingSO.canGenerateResource;
+    }
+
+    public ResourceGeneratorData GetActiveBuildingResourceGeneratorData() {
+        if (IsActiveBuildingHarvestable()) {
+            return activeBuildingSO.resourceGeneratorData;
+        } else {
+            return null;
+        }
     }
 }

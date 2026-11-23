@@ -1,0 +1,4279 @@
+fileFormatVersion: 2
+guid: a6e352d26b47ce34e900f9736957e692
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 339930793310924880
+    second: CircleLarge_DottedOutlineOnly_0
+  - first:
+      213: 3977001759944545666
+    second: CircleLarge_DottedOutlineOnly_1
+  - first:
+      213: 7265732448145112437
+    second: CircleLarge_DottedOutlineOnly_2
+  - first:
+      213: 5514374834680212899
+    second: CircleLarge_DottedOutlineOnly_3
+  - first:
+      213: -6954801832970862261
+    second: CircleLarge_DottedOutlineOnly_4
+  - first:
+      213: 517248929668813382
+    second: CircleLarge_DottedOutlineOnly_5
+  - first:
+      213: 1858774509932654418
+    second: CircleLarge_DottedOutlineOnly_6
+  - first:
+      213: 6168538773441575310
+    second: CircleLarge_DottedOutlineOnly_7
+  - first:
+      213: 2220421281843931145
+    second: CircleLarge_DottedOutlineOnly_8
+  - first:
+      213: -61939157904398703
+    second: CircleLarge_DottedOutlineOnly_9
+  - first:
+      213: 1170524390433007206
+    second: CircleLarge_DottedOutlineOnly_10
+  - first:
+      213: 3473345892317632719
+    second: CircleLarge_DottedOutlineOnly_11
+  - first:
+      213: -4265989110353493783
+    second: CircleLarge_DottedOutlineOnly_12
+  - first:
+      213: -4825639085647797323
+    second: CircleLarge_DottedOutlineOnly_13
+  - first:
+      213: -7702958407910857778
+    second: CircleLarge_DottedOutlineOnly_14
+  - first:
+      213: -8080831203171301311
+    second: CircleLarge_DottedOutlineOnly_15
+  - first:
+      213: 7772845274703598155
+    second: CircleLarge_DottedOutlineOnly_16
+  - first:
+      213: -7240933753367515408
+    second: CircleLarge_DottedOutlineOnly_17
+  - first:
+      213: 5590413284238845415
+    second: CircleLarge_DottedOutlineOnly_18
+  - first:
+      213: -4675805144463144661
+    second: CircleLarge_DottedOutlineOnly_19
+  - first:
+      213: 1151528302687392229
+    second: CircleLarge_DottedOutlineOnly_20
+  - first:
+      213: -4738103736058977265
+    second: CircleLarge_DottedOutlineOnly_21
+  - first:
+      213: 568821378126805836
+    second: CircleLarge_DottedOutlineOnly_22
+  - first:
+      213: -5846813793792551739
+    second: CircleLarge_DottedOutlineOnly_23
+  - first:
+      213: 8398345989994630570
+    second: CircleLarge_DottedOutlineOnly_24
+  - first:
+      213: -8577058908264721436
+    second: CircleLarge_DottedOutlineOnly_25
+  - first:
+      213: 706427838161839861
+    second: CircleLarge_DottedOutlineOnly_26
+  - first:
+      213: -6782165437427163145
+    second: CircleLarge_DottedOutlineOnly_27
+  - first:
+      213: 5420530732894564790
+    second: CircleLarge_DottedOutlineOnly_28
+  - first:
+      213: 3773086275821573851
+    second: CircleLarge_DottedOutlineOnly_29
+  - first:
+      213: -7456910413482277296
+    second: CircleLarge_DottedOutlineOnly_30
+  - first:
+      213: 5129210967101768431
+    second: CircleLarge_DottedOutlineOnly_31
+  - first:
+      213: 8258724127844177291
+    second: CircleLarge_DottedOutlineOnly_32
+  - first:
+      213: -2632623114767531649
+    second: CircleLarge_DottedOutlineOnly_33
+  - first:
+      213: 6037562769080298371
+    second: CircleLarge_DottedOutlineOnly_34
+  - first:
+      213: 8328830969669167720
+    second: CircleLarge_DottedOutlineOnly_35
+  - first:
+      213: 8584403629367514896
+    second: CircleLarge_DottedOutlineOnly_36
+  - first:
+      213: 1330065323039831992
+    second: CircleLarge_DottedOutlineOnly_37
+  - first:
+      213: -5275918409451847605
+    second: CircleLarge_DottedOutlineOnly_38
+  - first:
+      213: -9043639228950049897
+    second: CircleLarge_DottedOutlineOnly_39
+  - first:
+      213: -5063001042168901688
+    second: CircleLarge_DottedOutlineOnly_40
+  - first:
+      213: -7400120256818810858
+    second: CircleLarge_DottedOutlineOnly_41
+  - first:
+      213: 610309655760423654
+    second: CircleLarge_DottedOutlineOnly_42
+  - first:
+      213: 8525121645305359079
+    second: CircleLarge_DottedOutlineOnly_43
+  - first:
+      213: 3050036212868686144
+    second: CircleLarge_DottedOutlineOnly_44
+  - first:
+      213: -1008969430308728033
+    second: CircleLarge_DottedOutlineOnly_45
+  - first:
+      213: 3835102786800126687
+    second: CircleLarge_DottedOutlineOnly_46
+  - first:
+      213: -7749402712099424771
+    second: CircleLarge_DottedOutlineOnly_47
+  - first:
+      213: -7796544351404461567
+    second: CircleLarge_DottedOutlineOnly_48
+  - first:
+      213: -6085435725502247110
+    second: CircleLarge_DottedOutlineOnly_49
+  - first:
+      213: -8531310768594476345
+    second: CircleLarge_DottedOutlineOnly_50
+  - first:
+      213: -6519624084753682675
+    second: CircleLarge_DottedOutlineOnly_51
+  - first:
+      213: 3865321257808371526
+    second: CircleLarge_DottedOutlineOnly_52
+  - first:
+      213: 8349316361751063617
+    second: CircleLarge_DottedOutlineOnly_53
+  - first:
+      213: -5348374369871805148
+    second: CircleLarge_DottedOutlineOnly_54
+  - first:
+      213: 3533280391800489689
+    second: CircleLarge_DottedOutlineOnly_55
+  - first:
+      213: -705386747954464453
+    second: CircleLarge_DottedOutlineOnly_56
+  - first:
+      213: -1806556118955345205
+    second: CircleLarge_DottedOutlineOnly_57
+  - first:
+      213: -3221729715808071797
+    second: CircleLarge_DottedOutlineOnly_58
+  - first:
+      213: 7152941624481466522
+    second: CircleLarge_DottedOutlineOnly_59
+  - first:
+      213: 5780803761399309178
+    second: CircleLarge_DottedOutlineOnly_60
+  - first:
+      213: -4853348106706657098
+    second: CircleLarge_DottedOutlineOnly_61
+  - first:
+      213: -2153153228969081917
+    second: CircleLarge_DottedOutlineOnly_62
+  - first:
+      213: 7941284000925826309
+    second: CircleLarge_DottedOutlineOnly_63
+  - first:
+      213: 889461042649219170
+    second: CircleLarge_DottedOutlineOnly_64
+  - first:
+      213: -1821678940449186631
+    second: CircleLarge_DottedOutlineOnly_65
+  - first:
+      213: -2866761898674340440
+    second: CircleLarge_DottedOutlineOnly_66
+  - first:
+      213: 4270190441979074836
+    second: CircleLarge_DottedOutlineOnly_67
+  - first:
+      213: 9053498908210483905
+    second: CircleLarge_DottedOutlineOnly_68
+  - first:
+      213: -2503555585830530593
+    second: CircleLarge_DottedOutlineOnly_69
+  - first:
+      213: 5362849376734107646
+    second: CircleLarge_DottedOutlineOnly_70
+  - first:
+      213: 1641627318840486074
+    second: CircleLarge_DottedOutlineOnly_71
+  - first:
+      213: 1400669320291557970
+    second: CircleLarge_DottedOutlineOnly_72
+  - first:
+      213: 7805749242480223810
+    second: CircleLarge_DottedOutlineOnly_73
+  - first:
+      213: 1464669488140934196
+    second: CircleLarge_DottedOutlineOnly_74
+  - first:
+      213: -2281494043602117081
+    second: CircleLarge_DottedOutlineOnly_75
+  - first:
+      213: 2842483892747798338
+    second: CircleLarge_DottedOutlineOnly_76
+  - first:
+      213: -6422223193637216856
+    second: CircleLarge_DottedOutlineOnly_77
+  - first:
+      213: 2504433957893545509
+    second: CircleLarge_DottedOutlineOnly_78
+  - first:
+      213: 770399487399726852
+    second: CircleLarge_DottedOutlineOnly_79
+  - first:
+      213: -255776579710190170
+    second: CircleLarge_DottedOutlineOnly_80
+  - first:
+      213: -8207908763820297598
+    second: CircleLarge_DottedOutlineOnly_81
+  - first:
+      213: -804646022649590857
+    second: CircleLarge_DottedOutlineOnly_82
+  - first:
+      213: -399871859404547966
+    second: CircleLarge_DottedOutlineOnly_83
+  - first:
+      213: 958744609465240254
+    second: CircleLarge_DottedOutlineOnly_84
+  - first:
+      213: 3615684173535041595
+    second: CircleLarge_DottedOutlineOnly_85
+  - first:
+      213: 1132518144012261149
+    second: CircleLarge_DottedOutlineOnly_86
+  - first:
+      213: -4074928080722964425
+    second: CircleLarge_DottedOutlineOnly_87
+  - first:
+      213: -6320117046589643720
+    second: CircleLarge_DottedOutlineOnly_88
+  - first:
+      213: -3503453659545270196
+    second: CircleLarge_DottedOutlineOnly_89
+  - first:
+      213: 6411417229791690392
+    second: CircleLarge_DottedOutlineOnly_90
+  - first:
+      213: 9000178654158580166
+    second: CircleLarge_DottedOutlineOnly_91
+  - first:
+      213: -4571829856737976741
+    second: CircleLarge_DottedOutlineOnly_92
+  - first:
+      213: -5774442105230654001
+    second: CircleLarge_DottedOutlineOnly_93
+  - first:
+      213: -5266478595771959715
+    second: CircleLarge_DottedOutlineOnly_94
+  - first:
+      213: 2069803086024541555
+    second: CircleLarge_DottedOutlineOnly_95
+  - first:
+      213: -8819354005720190052
+    second: CircleLarge_DottedOutlineOnly_96
+  - first:
+      213: 9047760314802097914
+    second: CircleLarge_DottedOutlineOnly_97
+  - first:
+      213: 3880270187937978339
+    second: CircleLarge_DottedOutlineOnly_98
+  - first:
+      213: 3891785844295143927
+    second: CircleLarge_DottedOutlineOnly_99
+  - first:
+      213: -6584974542366890629
+    second: CircleLarge_DottedOutlineOnly_100
+  - first:
+      213: 1643670178976788214
+    second: CircleLarge_DottedOutlineOnly_101
+  - first:
+      213: -2615112727712420393
+    second: CircleLarge_DottedOutlineOnly_102
+  - first:
+      213: -3924411719250132016
+    second: CircleLarge_DottedOutlineOnly_103
+  - first:
+      213: 5492062861226263432
+    second: CircleLarge_DottedOutlineOnly_104
+  - first:
+      213: 428631841463922619
+    second: CircleLarge_DottedOutlineOnly_105
+  - first:
+      213: 6469255375632937161
+    second: CircleLarge_DottedOutlineOnly_106
+  - first:
+      213: -4558220135562321544
+    second: CircleLarge_DottedOutlineOnly_107
+  - first:
+      213: -8738624054065178361
+    second: CircleLarge_DottedOutlineOnly_108
+  - first:
+      213: 8082216678926985308
+    second: CircleLarge_DottedOutlineOnly_109
+  - first:
+      213: 2537409832135280265
+    second: CircleLarge_DottedOutlineOnly_110
+  - first:
+      213: 3334077575481635462
+    second: CircleLarge_DottedOutlineOnly_111
+  - first:
+      213: 6255933883441797204
+    second: CircleLarge_DottedOutlineOnly_112
+  - first:
+      213: 6902456421943033381
+    second: CircleLarge_DottedOutlineOnly_113
+  - first:
+      213: -2999003792923090800
+    second: CircleLarge_DottedOutlineOnly_114
+  - first:
+      213: 8197694024605149466
+    second: CircleLarge_DottedOutlineOnly_115
+  - first:
+      213: 1398488719930901660
+    second: CircleLarge_DottedOutlineOnly_116
+  - first:
+      213: 1032983516834819729
+    second: CircleLarge_DottedOutlineOnly_117
+  - first:
+      213: 4893640839888443069
+    second: CircleLarge_DottedOutlineOnly_118
+  - first:
+      213: -4797771338152230794
+    second: CircleLarge_DottedOutlineOnly_119
+  - first:
+      213: 47451439012615108
+    second: CircleLarge_DottedOutlineOnly_120
+  - first:
+      213: -2141168900013527321
+    second: CircleLarge_DottedOutlineOnly_121
+  - first:
+      213: -2913730174290614635
+    second: CircleLarge_DottedOutlineOnly_122
+  - first:
+      213: -2578622697813139026
+    second: CircleLarge_DottedOutlineOnly_123
+  - first:
+      213: 376384663099973082
+    second: CircleLarge_DottedOutlineOnly_124
+  - first:
+      213: 1849091215376001960
+    second: CircleLarge_DottedOutlineOnly_125
+  - first:
+      213: -1379191907633107941
+    second: CircleLarge_DottedOutlineOnly_126
+  - first:
+      213: 4194854586065263337
+    second: CircleLarge_DottedOutlineOnly_127
+  - first:
+      213: 2504911789959752042
+    second: CircleLarge_DottedOutlineOnly_128
+  - first:
+      213: -6520132076557497495
+    second: CircleLarge_DottedOutlineOnly_129
+  - first:
+      213: -2223014160903228162
+    second: CircleLarge_DottedOutlineOnly_130
+  - first:
+      213: -4199506861569128282
+    second: CircleLarge_DottedOutlineOnly_131
+  - first:
+      213: 6271910766963812079
+    second: CircleLarge_DottedOutlineOnly_132
+  - first:
+      213: -966723783898068677
+    second: CircleLarge_DottedOutlineOnly_133
+  - first:
+      213: -8247998015574908153
+    second: CircleLarge_DottedOutlineOnly_134
+  - first:
+      213: 5298862289353033044
+    second: CircleLarge_DottedOutlineOnly_135
+  - first:
+      213: -5562069726309994281
+    second: CircleLarge_DottedOutlineOnly_136
+  - first:
+      213: 1760937846460512781
+    second: CircleLarge_DottedOutlineOnly_137
+  - first:
+      213: 5405728370857436455
+    second: CircleLarge_DottedOutlineOnly_138
+  - first:
+      213: 7441760419796712167
+    second: CircleLarge_DottedOutlineOnly_139
+  - first:
+      213: -7691214189580810647
+    second: CircleLarge_DottedOutlineOnly_140
+  - first:
+      213: 1088217094909948158
+    second: CircleLarge_DottedOutlineOnly_141
+  - first:
+      213: -920764124982614992
+    second: CircleLarge_DottedOutlineOnly_142
+  - first:
+      213: -157233217151949456
+    second: CircleLarge_DottedOutlineOnly_143
+  - first:
+      213: -6289410633048771736
+    second: CircleLarge_DottedOutlineOnly_144
+  - first:
+      213: 4782417621907961209
+    second: CircleLarge_DottedOutlineOnly_145
+  - first:
+      213: -6627437548460331265
+    second: CircleLarge_DottedOutlineOnly_146
+  - first:
+      213: 490555760521069012
+    second: CircleLarge_DottedOutlineOnly_147
+  - first:
+      213: -2277384903957208129
+    second: CircleLarge_DottedOutlineOnly_148
+  - first:
+      213: 7334612033847715385
+    second: CircleLarge_DottedOutlineOnly_149
+  - first:
+      213: -1524936259940043654
+    second: CircleLarge_DottedOutlineOnly_150
+  - first:
+      213: 7980697063542293336
+    second: CircleLarge_DottedOutlineOnly_151
+  - first:
+      213: -2343863915125831342
+    second: CircleLarge_DottedOutlineOnly_152
+  - first:
+      213: -4364125256486721510
+    second: CircleLarge_DottedOutlineOnly_153
+  - first:
+      213: 7542098289951830237
+    second: CircleLarge_DottedOutlineOnly_154
+  - first:
+      213: 4924443261525145340
+    second: CircleLarge_DottedOutlineOnly_155
+  - first:
+      213: 6700401827483638175
+    second: CircleLarge_DottedOutlineOnly_156
+  - first:
+      213: -1709745517427560667
+    second: CircleLarge_DottedOutlineOnly_157
+  - first:
+      213: -62968963190122703
+    second: CircleLarge_DottedOutlineOnly_158
+  - first:
+      213: 8213330944849824690
+    second: CircleLarge_DottedOutlineOnly_159
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 0
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1024
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_0
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1007
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 050b387614da7b400800000000000000
+      internalID: 339930793310924880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_1
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 1011
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28519949706213730800000000000000
+      internalID: 3977001759944545666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_2
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1013
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57df7b48a2115d460800000000000000
+      internalID: 7265732448145112437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_3
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 1015
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ada77b12bef68c40800000000000000
+      internalID: 5514374834680212899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_4
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 1017
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b41498eb4949b7f90800000000000000
+      internalID: -6954801832970862261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_5
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 1017
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6425c593923ad2700800000000000000
+      internalID: 517248929668813382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_6
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1016
+        width: 18
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25f261e8191bbc910800000000000000
+      internalID: 1858774509932654418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_7
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 1014
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e897536055d0b9550800000000000000
+      internalID: 6168538773441575310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_8
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 1012
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 908660c346580de10800000000000000
+      internalID: 2220421281843931145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_9
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 1009
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 196eb6ff9a2f32ff0800000000000000
+      internalID: -61939157904398703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_10
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 998
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 666a0bc3bb98e3010800000000000000
+      internalID: 1170524390433007206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_11
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 1003
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc897adbfadc33030800000000000000
+      internalID: 3473345892317632719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_12
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 1005
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e002bd91892cc4c0800000000000000
+      internalID: -4265989110353493783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_13
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 1000
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b3e8b5a1d2e70db0800000000000000
+      internalID: -4825639085647797323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_14
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 994
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec36dd8d328991590800000000000000
+      internalID: -7702958407910857778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_15
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 985
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1480515b5de1bdf80800000000000000
+      internalID: -8080831203171301311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_16
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 992
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4218c45891bedb60800000000000000
+      internalID: 7772845274703598155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_17
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 988
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fea46c8d19038b90800000000000000
+      internalID: -7240933753367515408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_18
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 981
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e56ea24343259d40800000000000000
+      internalID: 5590413284238845415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_19
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 970
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b29845d9ef33c1fb0800000000000000
+      internalID: -4675805144463144661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_20
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 978
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e19d76e3ec0bff00800000000000000
+      internalID: 1151528302687392229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_21
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 974
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f04e04f61cfde3eb0800000000000000
+      internalID: -4738103736058977265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_22
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 965
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4b75e7970cd4e700800000000000000
+      internalID: 568821378126805836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_23
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 951
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c4142115d1fbdea0800000000000000
+      internalID: -5846813793792551739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_24
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 961
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aadc47a7e2bec8470800000000000000
+      internalID: 8398345989994630570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_25
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 956
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e3184bbd5a28f880800000000000000
+      internalID: -8577058908264721436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_26
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 946
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f66511406cbdc900800000000000000
+      internalID: 706427838161839861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_27
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 930
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ffd836d778e0e1a0800000000000000
+      internalID: -6782165437427163145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_28
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 941
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b1b44c7bf7993b40800000000000000
+      internalID: 5420530732894564790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_29
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 936
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd61f392af1bc5430800000000000000
+      internalID: 3773086275821573851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_30
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 919
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0564a72cc7bb38890800000000000000
+      internalID: -7456910413482277296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_31
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 924
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe28328e23e9e2740800000000000000
+      internalID: 5129210967101768431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_32
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 913
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b85991276d1ec9270800000000000000
+      internalID: 8258724127844177291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_33
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 894
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f718cc0b93b077bd0800000000000000
+      internalID: -2632623114767531649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_34
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 907
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38ba720a95bb9c350800000000000000
+      internalID: 6037562769080298371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_35
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 900
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86a276d83a3f59370800000000000000
+      internalID: 8328830969669167720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_36
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 881
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01756096e9de12770800000000000000
+      internalID: 8584403629367514896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_37
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 887
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b7bad34d57557210800000000000000
+      internalID: 1330065323039831992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_38
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 874
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b40cdacd82c28c6b0800000000000000
+      internalID: -5275918409451847605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_39
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 853
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79b05a9590a8e7280800000000000000
+      internalID: -9043639228950049897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_40
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 867
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cf0718806b9cb9b0800000000000000
+      internalID: -5063001042168901688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_41
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 859
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 610742d75dd7d4990800000000000000
+      internalID: -7400120256818810858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_42
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 838
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ea479af561487800800000000000000
+      internalID: 610309655760423654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_43
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 845
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ea6b67e7f05f4670800000000000000
+      internalID: 8525121645305359079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_44
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 829
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 041ad1c96c7e35a20800000000000000
+      internalID: 3050036212868686144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_45
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 806
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f13583d16ab6ff1f0800000000000000
+      internalID: -1008969430308728033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_46
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 822
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fda05545aa5093530800000000000000
+      internalID: 3835102786800126687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_47
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 814
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df57ddb9a47947490800000000000000
+      internalID: -7749402712099424771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_48
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 790
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10275f2683c1dc390800000000000000
+      internalID: -7796544351404461567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_49
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 798
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3f87fd13703c8ba0800000000000000
+      internalID: -6085435725502247110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_50
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 781
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c226798e02ba9980800000000000000
+      internalID: -8531310768594476345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_51
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 756
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0fec27ff64a585a0800000000000000
+      internalID: -6519624084753682675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_52
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 773
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64f1f62643164a530800000000000000
+      internalID: 3865321257808371526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_53
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 764
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14c67839efabed370800000000000000
+      internalID: 8349316361751063617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_54
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 738
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 425ccf5f8d1c6c5b0800000000000000
+      internalID: -5348374369871805148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_55
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 747
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d60f15dbcbb80130800000000000000
+      internalID: 3533280391800489689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_56
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 729
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b39f7e27d76f536f0800000000000000
+      internalID: -705386747954464453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_57
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 702
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcabbd608c2dde6e0800000000000000
+      internalID: -1806556118955345205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_58
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 720
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8f80f694ed1a43d0800000000000000
+      internalID: -3221729715808071797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_59
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 711
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a98c252728a544360800000000000000
+      internalID: 7152941624481466522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_60
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 684
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a73a27a946a893050800000000000000
+      internalID: 5780803761399309178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_61
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 692
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b06f607c9175acb0800000000000000
+      internalID: -4853348106706657098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_62
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 674
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c30050db867e12e0800000000000000
+      internalID: -2153153228969081917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_63
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 665
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50d3daf59bb153e60800000000000000
+      internalID: 7941284000925826309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_64
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 655
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 260c7a01b10085c00800000000000000
+      internalID: 889461042649219170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_65
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 646
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bc57b3c7a818b6e0800000000000000
+      internalID: -1821678940449186631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_66
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 635
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ad34eded373738d0800000000000000
+      internalID: -2866761898674340440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_67
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 607
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4195e612593c24b30800000000000000
+      internalID: 4270190441979074836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_68
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 626
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c2d54e1a4d74ad70800000000000000
+      internalID: 9053498908210483905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_69
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 616
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd150278575914dd0800000000000000
+      internalID: -2503555585830530593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_70
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 587
+        width: 10
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef75924381bac6a40800000000000000
+      internalID: 5362849376734107646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_71
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 596
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab86019495b38c610800000000000000
+      internalID: 1641627318840486074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_72
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 568
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25224c3635d207310800000000000000
+      internalID: 1400669320291557970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_73
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 577
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 246eec35497935c60800000000000000
+      internalID: 7805749242480223810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_74
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 548
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43c5ef9a32d835410800000000000000
+      internalID: 1464669488140934196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_75
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 557
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72e1de551418650e0800000000000000
+      internalID: -2281494043602117081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_76
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 528
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24780035a08827720800000000000000
+      internalID: 2842483892747798338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_77
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 537
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ad9af2280eafd6a0800000000000000
+      internalID: -6422223193637216856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 508
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52e9ba76a6981c220800000000000000
+      internalID: 2504433957893545509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_79
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 517
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40f8a95804201ba00800000000000000
+      internalID: 770399487399726852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 489
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ad72805e8c437cf0800000000000000
+      internalID: -255776579710190170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_81
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 497
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 282fca77776a71e80800000000000000
+      internalID: -8207908763820297598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_82
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 469
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bb4a02a4b255d4f0800000000000000
+      internalID: -804646022649590857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_83
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 477
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 288548899ae537af0800000000000000
+      internalID: -399871859404547966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_84
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 449
+        width: 10
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eba0f7584252e4d00800000000000000
+      internalID: 958744609465240254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_85
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 457
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b38de8f599d7d2230800000000000000
+      internalID: 3615684173535041595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_86
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 429
+        width: 10
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d17198b604387bf00800000000000000
+      internalID: 1132518144012261149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_87
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 437
+        width: 10
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7305e3f1082f277c0800000000000000
+      internalID: -4074928080722964425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_88
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 410
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8342223180f6a48a0800000000000000
+      internalID: -6320117046589643720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_89
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 417
+        width: 10
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4803cf657b316fc0800000000000000
+      internalID: -3503453659545270196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_90
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 390
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89e7d88500ee9f850800000000000000
+      internalID: 6411417229791690392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_91
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 398
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c9ec2c0dce07ec70800000000000000
+      internalID: 9000178654158580166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_92
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 371
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5e9b97c7f89d80c0800000000000000
+      internalID: -4571829856737976741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_93
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 359
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc50ba5ef7f0ddfa0800000000000000
+      internalID: -5774442105230654001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_94
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 378
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5670d1ce95b9e6b0800000000000000
+      internalID: -5266478595771959715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_95
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 351
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3750081c0fa69bc10800000000000000
+      internalID: 2069803086024541555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_96
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 332
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9331ac324c5b9580800000000000000
+      internalID: -8819354005720190052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_97
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 340
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afec7a8b11a109d70800000000000000
+      internalID: 9047760314802097914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_98
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 314
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e7d4986d2d79d530800000000000000
+      internalID: 3880270187937978339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_99
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 302
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f11b171b96620630800000000000000
+      internalID: 3891785844295143927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_100
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 321
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b752b3bda887d94a0800000000000000
+      internalID: -6584974542366890629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_101
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 295
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fe60d9b15d7fc610800000000000000
+      internalID: 1643670178976788214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_102
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 277
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dd291164d045bbd0800000000000000
+      internalID: -2615112727712420393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_103
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 284
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d347b17550b989c0800000000000000
+      internalID: -3924411719250132016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_104
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 260
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 883c187f21ab73c40800000000000000
+      internalID: 5492062861226263432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_105
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 249
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbfe0e9836ec2f500800000000000000
+      internalID: 428631841463922619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_106
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 266
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c033e11d7967c950800000000000000
+      internalID: 6469255375632937161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_107
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 242
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87166cbefe2fdb0c0800000000000000
+      internalID: -4558220135562321544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_108
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 225
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 709d2c7d8bb2ab680800000000000000
+      internalID: -8738624054065178361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_109
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 232
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c582e218f3dc92070800000000000000
+      internalID: 8082216678926985308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_110
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 209
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 986c10e6cc0b63320800000000000000
+      internalID: 2537409832135280265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_111
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 199
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 682bd24e3e5054e20800000000000000
+      internalID: 3334077575481635462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_112
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 215
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 458d0ecb8ba81d650800000000000000
+      internalID: 6255933883441797204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_113
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 193
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52e37838b837acf50800000000000000
+      internalID: 6902456421943033381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_114
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 177
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09025c290f56166d0800000000000000
+      internalID: -2999003792923090800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_115
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 183
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a19aee9384f04c170800000000000000
+      internalID: 8197694024605149466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_116
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 162
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c944fddc41e686310800000000000000
+      internalID: 1398488719930901660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_117
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 154
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19ee5cb1905e55e00800000000000000
+      internalID: 1032983516834819729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_118
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 168
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db615ef8a64b9e340800000000000000
+      internalID: 4893640839888443069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_119
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 148
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 670c2eb3364ea6db0800000000000000
+      internalID: -4797771338152230794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_120
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 134
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c39d6615d498a000800000000000000
+      internalID: 47451439012615108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_121
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 139
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ee6496da3a0942e0800000000000000
+      internalID: -2141168900013527321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_122
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 121
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 596221618d95097d0800000000000000
+      internalID: -2913730174290614635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_123
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 113
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea1a6178154e63cd0800000000000000
+      internalID: -2578622697813139026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_124
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 126
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: add9afe5bdf293500800000000000000
+      internalID: 376384663099973082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_125
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 108
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ab28c9d9aa49a910800000000000000
+      internalID: 1849091215376001960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_126
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 96
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1c6f6c64402cdce0800000000000000
+      internalID: -1379191907633107941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_127
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 101
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ea96de450e173a30800000000000000
+      internalID: 4194854586065263337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_128
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 84
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a692d3a500c33c220800000000000000
+      internalID: 2504911789959752042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_129
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 74
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96b0928eb66d385a0800000000000000
+      internalID: -6520132076557497495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_130
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 78
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef433b016644621e0800000000000000
+      internalID: -2223014160903228162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_131
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 89
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a84b5462ca58b5c0800000000000000
+      internalID: -4199506861569128282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_132
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 64
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe663dfcc9d4a0750800000000000000
+      internalID: 6271910766963812079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_133
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 54
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3985d827d18592f0800000000000000
+      internalID: -966723783898068677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_134
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 58
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 703e78d2189398d80800000000000000
+      internalID: -8247998015574908153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_135
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 67
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 455c9967d27598940800000000000000
+      internalID: 5298862289353033044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_136
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 45
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d0b6539d0f8fc2b0800000000000000
+      internalID: -5562069726309994281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_137
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 37
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0af1d934ab107810800000000000000
+      internalID: 1760937846460512781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_138
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 40
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72565310051050b40800000000000000
+      internalID: 5405728370857436455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_139
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 49
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ea7b857ca1764760800000000000000
+      internalID: 7441760419796712167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_140
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 30
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9668792c171534590800000000000000
+      internalID: -7691214189580810647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_141
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 23
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef07d94aeaf1a1f00800000000000000
+      internalID: 1088217094909948158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_142
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 26
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 034ec7028e9c833f0800000000000000
+      internalID: -920764124982614992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_143
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 33
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07524c8d83561ddf0800000000000000
+      internalID: -157233217151949456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_144
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 18
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 863309a1a5687b8a0800000000000000
+      internalID: -6289410633048771736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_145
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 13
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97574612d7f8e5240800000000000000
+      internalID: 4782417621907961209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_146
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 10
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffeafe0d9ac9604a0800000000000000
+      internalID: -6627437548460331265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_147
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 15
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d141687dddcec600800000000000000
+      internalID: 490555760521069012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_148
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 20
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb32bc6fe7a1560e0800000000000000
+      internalID: -2277384903957208129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_149
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 8
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9366ccac8c6c9c560800000000000000
+      internalID: 7334612033847715385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_150
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 5
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7439211d8656dae0800000000000000
+      internalID: -1524936259940043654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_151
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 2
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 853017c12b121ce60800000000000000
+      internalID: 7980697063542293336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_152
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 0
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2598111003ce87fd0800000000000000
+      internalID: -2343863915125831342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_153
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 0
+        width: 18
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a186ccb83338f63c0800000000000000
+      internalID: -4364125256486721510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_154
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 0
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd0f8a95f6aeaa860800000000000000
+      internalID: 7542098289951830237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_155
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 1
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf6b5c73e03275440800000000000000
+      internalID: 4924443261525145340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_156
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 3
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f995a8b36fb9cfc50800000000000000
+      internalID: 6700401827483638175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_157
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 6
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52fe961b283c548e0800000000000000
+      internalID: -1709745517427560667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_158
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 0
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1379d25cf0a402ff0800000000000000
+      internalID: -62968963190122703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleLarge_DottedOutlineOnly_159
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 0
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bb4f7e6afc9bf170800000000000000
+      internalID: 8213330944849824690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      CircleLarge_DottedOutlineOnly_0: 339930793310924880
+      CircleLarge_DottedOutlineOnly_1: 3977001759944545666
+      CircleLarge_DottedOutlineOnly_10: 1170524390433007206
+      CircleLarge_DottedOutlineOnly_100: -6584974542366890629
+      CircleLarge_DottedOutlineOnly_101: 1643670178976788214
+      CircleLarge_DottedOutlineOnly_102: -2615112727712420393
+      CircleLarge_DottedOutlineOnly_103: -3924411719250132016
+      CircleLarge_DottedOutlineOnly_104: 5492062861226263432
+      CircleLarge_DottedOutlineOnly_105: 428631841463922619
+      CircleLarge_DottedOutlineOnly_106: 6469255375632937161
+      CircleLarge_DottedOutlineOnly_107: -4558220135562321544
+      CircleLarge_DottedOutlineOnly_108: -8738624054065178361
+      CircleLarge_DottedOutlineOnly_109: 8082216678926985308
+      CircleLarge_DottedOutlineOnly_11: 3473345892317632719
+      CircleLarge_DottedOutlineOnly_110: 2537409832135280265
+      CircleLarge_DottedOutlineOnly_111: 3334077575481635462
+      CircleLarge_DottedOutlineOnly_112: 6255933883441797204
+      CircleLarge_DottedOutlineOnly_113: 6902456421943033381
+      CircleLarge_DottedOutlineOnly_114: -2999003792923090800
+      CircleLarge_DottedOutlineOnly_115: 8197694024605149466
+      CircleLarge_DottedOutlineOnly_116: 1398488719930901660
+      CircleLarge_DottedOutlineOnly_117: 1032983516834819729
+      CircleLarge_DottedOutlineOnly_118: 4893640839888443069
+      CircleLarge_DottedOutlineOnly_119: -4797771338152230794
+      CircleLarge_DottedOutlineOnly_12: -4265989110353493783
+      CircleLarge_DottedOutlineOnly_120: 47451439012615108
+      CircleLarge_DottedOutlineOnly_121: -2141168900013527321
+      CircleLarge_DottedOutlineOnly_122: -2913730174290614635
+      CircleLarge_DottedOutlineOnly_123: -2578622697813139026
+      CircleLarge_DottedOutlineOnly_124: 376384663099973082
+      CircleLarge_DottedOutlineOnly_125: 1849091215376001960
+      CircleLarge_DottedOutlineOnly_126: -1379191907633107941
+      CircleLarge_DottedOutlineOnly_127: 4194854586065263337
+      CircleLarge_DottedOutlineOnly_128: 2504911789959752042
+      CircleLarge_DottedOutlineOnly_129: -6520132076557497495
+      CircleLarge_DottedOutlineOnly_13: -4825639085647797323
+      CircleLarge_DottedOutlineOnly_130: -2223014160903228162
+      CircleLarge_DottedOutlineOnly_131: -4199506861569128282
+      CircleLarge_DottedOutlineOnly_132: 6271910766963812079
+      CircleLarge_DottedOutlineOnly_133: -966723783898068677
+      CircleLarge_DottedOutlineOnly_134: -8247998015574908153
+      CircleLarge_DottedOutlineOnly_135: 5298862289353033044
+      CircleLarge_DottedOutlineOnly_136: -5562069726309994281
+      CircleLarge_DottedOutlineOnly_137: 1760937846460512781
+      CircleLarge_DottedOutlineOnly_138: 5405728370857436455
+      CircleLarge_DottedOutlineOnly_139: 7441760419796712167
+      CircleLarge_DottedOutlineOnly_14: -7702958407910857778
+      CircleLarge_DottedOutlineOnly_140: -7691214189580810647
+      CircleLarge_DottedOutlineOnly_141: 1088217094909948158
+      CircleLarge_DottedOutlineOnly_142: -920764124982614992
+      CircleLarge_DottedOutlineOnly_143: -157233217151949456
+      CircleLarge_DottedOutlineOnly_144: -6289410633048771736
+      CircleLarge_DottedOutlineOnly_145: 4782417621907961209
+      CircleLarge_DottedOutlineOnly_146: -6627437548460331265
+      CircleLarge_DottedOutlineOnly_147: 490555760521069012
+      CircleLarge_DottedOutlineOnly_148: -2277384903957208129
+      CircleLarge_DottedOutlineOnly_149: 7334612033847715385
+      CircleLarge_DottedOutlineOnly_15: -8080831203171301311
+      CircleLarge_DottedOutlineOnly_150: -1524936259940043654
+      CircleLarge_DottedOutlineOnly_151: 7980697063542293336
+      CircleLarge_DottedOutlineOnly_152: -2343863915125831342
+      CircleLarge_DottedOutlineOnly_153: -4364125256486721510
+      CircleLarge_DottedOutlineOnly_154: 7542098289951830237
+      CircleLarge_DottedOutlineOnly_155: 4924443261525145340
+      CircleLarge_DottedOutlineOnly_156: 6700401827483638175
+      CircleLarge_DottedOutlineOnly_157: -1709745517427560667
+      CircleLarge_DottedOutlineOnly_158: -62968963190122703
+      CircleLarge_DottedOutlineOnly_159: 8213330944849824690
+      CircleLarge_DottedOutlineOnly_16: 7772845274703598155
+      CircleLarge_DottedOutlineOnly_17: -7240933753367515408
+      CircleLarge_DottedOutlineOnly_18: 5590413284238845415
+      CircleLarge_DottedOutlineOnly_19: -4675805144463144661
+      CircleLarge_DottedOutlineOnly_2: 7265732448145112437
+      CircleLarge_DottedOutlineOnly_20: 1151528302687392229
+      CircleLarge_DottedOutlineOnly_21: -4738103736058977265
+      CircleLarge_DottedOutlineOnly_22: 568821378126805836
+      CircleLarge_DottedOutlineOnly_23: -5846813793792551739
+      CircleLarge_DottedOutlineOnly_24: 8398345989994630570
+      CircleLarge_DottedOutlineOnly_25: -8577058908264721436
+      CircleLarge_DottedOutlineOnly_26: 706427838161839861
+      CircleLarge_DottedOutlineOnly_27: -6782165437427163145
+      CircleLarge_DottedOutlineOnly_28: 5420530732894564790
+      CircleLarge_DottedOutlineOnly_29: 3773086275821573851
+      CircleLarge_DottedOutlineOnly_3: 5514374834680212899
+      CircleLarge_DottedOutlineOnly_30: -7456910413482277296
+      CircleLarge_DottedOutlineOnly_31: 5129210967101768431
+      CircleLarge_DottedOutlineOnly_32: 8258724127844177291
+      CircleLarge_DottedOutlineOnly_33: -2632623114767531649
+      CircleLarge_DottedOutlineOnly_34: 6037562769080298371
+      CircleLarge_DottedOutlineOnly_35: 8328830969669167720
+      CircleLarge_DottedOutlineOnly_36: 8584403629367514896
+      CircleLarge_DottedOutlineOnly_37: 1330065323039831992
+      CircleLarge_DottedOutlineOnly_38: -5275918409451847605
+      CircleLarge_DottedOutlineOnly_39: -9043639228950049897
+      CircleLarge_DottedOutlineOnly_4: -6954801832970862261
+      CircleLarge_DottedOutlineOnly_40: -5063001042168901688
+      CircleLarge_DottedOutlineOnly_41: -7400120256818810858
+      CircleLarge_DottedOutlineOnly_42: 610309655760423654
+      CircleLarge_DottedOutlineOnly_43: 8525121645305359079
+      CircleLarge_DottedOutlineOnly_44: 3050036212868686144
+      CircleLarge_DottedOutlineOnly_45: -1008969430308728033
+      CircleLarge_DottedOutlineOnly_46: 3835102786800126687
+      CircleLarge_DottedOutlineOnly_47: -7749402712099424771
+      CircleLarge_DottedOutlineOnly_48: -7796544351404461567
+      CircleLarge_DottedOutlineOnly_49: -6085435725502247110
+      CircleLarge_DottedOutlineOnly_5: 517248929668813382
+      CircleLarge_DottedOutlineOnly_50: -8531310768594476345
+      CircleLarge_DottedOutlineOnly_51: -6519624084753682675
+      CircleLarge_DottedOutlineOnly_52: 3865321257808371526
+      CircleLarge_DottedOutlineOnly_53: 8349316361751063617
+      CircleLarge_DottedOutlineOnly_54: -5348374369871805148
+      CircleLarge_DottedOutlineOnly_55: 3533280391800489689
+      CircleLarge_DottedOutlineOnly_56: -705386747954464453
+      CircleLarge_DottedOutlineOnly_57: -1806556118955345205
+      CircleLarge_DottedOutlineOnly_58: -3221729715808071797
+      CircleLarge_DottedOutlineOnly_59: 7152941624481466522
+      CircleLarge_DottedOutlineOnly_6: 1858774509932654418
+      CircleLarge_DottedOutlineOnly_60: 5780803761399309178
+      CircleLarge_DottedOutlineOnly_61: -4853348106706657098
+      CircleLarge_DottedOutlineOnly_62: -2153153228969081917
+      CircleLarge_DottedOutlineOnly_63: 7941284000925826309
+      CircleLarge_DottedOutlineOnly_64: 889461042649219170
+      CircleLarge_DottedOutlineOnly_65: -1821678940449186631
+      CircleLarge_DottedOutlineOnly_66: -2866761898674340440
+      CircleLarge_DottedOutlineOnly_67: 4270190441979074836
+      CircleLarge_DottedOutlineOnly_68: 9053498908210483905
+      CircleLarge_DottedOutlineOnly_69: -2503555585830530593
+      CircleLarge_DottedOutlineOnly_7: 6168538773441575310
+      CircleLarge_DottedOutlineOnly_70: 5362849376734107646
+      CircleLarge_DottedOutlineOnly_71: 1641627318840486074
+      CircleLarge_DottedOutlineOnly_72: 1400669320291557970
+      CircleLarge_DottedOutlineOnly_73: 7805749242480223810
+      CircleLarge_DottedOutlineOnly_74: 1464669488140934196
+      CircleLarge_DottedOutlineOnly_75: -2281494043602117081
+      CircleLarge_DottedOutlineOnly_76: 2842483892747798338
+      CircleLarge_DottedOutlineOnly_77: -6422223193637216856
+      CircleLarge_DottedOutlineOnly_78: 2504433957893545509
+      CircleLarge_DottedOutlineOnly_79: 770399487399726852
+      CircleLarge_DottedOutlineOnly_8: 2220421281843931145
+      CircleLarge_DottedOutlineOnly_80: -255776579710190170
+      CircleLarge_DottedOutlineOnly_81: -8207908763820297598
+      CircleLarge_DottedOutlineOnly_82: -804646022649590857
+      CircleLarge_DottedOutlineOnly_83: -399871859404547966
+      CircleLarge_DottedOutlineOnly_84: 958744609465240254
+      CircleLarge_DottedOutlineOnly_85: 3615684173535041595
+      CircleLarge_DottedOutlineOnly_86: 1132518144012261149
+      CircleLarge_DottedOutlineOnly_87: -4074928080722964425
+      CircleLarge_DottedOutlineOnly_88: -6320117046589643720
+      CircleLarge_DottedOutlineOnly_89: -3503453659545270196
+      CircleLarge_DottedOutlineOnly_9: -61939157904398703
+      CircleLarge_DottedOutlineOnly_90: 6411417229791690392
+      CircleLarge_DottedOutlineOnly_91: 9000178654158580166
+      CircleLarge_DottedOutlineOnly_92: -4571829856737976741
+      CircleLarge_DottedOutlineOnly_93: -5774442105230654001
+      CircleLarge_DottedOutlineOnly_94: -5266478595771959715
+      CircleLarge_DottedOutlineOnly_95: 2069803086024541555
+      CircleLarge_DottedOutlineOnly_96: -8819354005720190052
+      CircleLarge_DottedOutlineOnly_97: 9047760314802097914
+      CircleLarge_DottedOutlineOnly_98: 3880270187937978339
+      CircleLarge_DottedOutlineOnly_99: 3891785844295143927
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -52,6 +52,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldResourceNode
       objectReference: {fileID: 0}
+    - target: {fileID: 6745724876759307160, guid: 714a366426142c143980896239aad57f, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6745724876759307160, guid: 714a366426142c143980896239aad57f, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8352941
+      objectReference: {fileID: 0}
     - target: {fileID: 8461395270767626031, guid: 714a366426142c143980896239aad57f, type: 3}
       propertyPath: m_Size.x
       value: 4.875

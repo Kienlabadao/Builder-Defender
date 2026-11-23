@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Building))]
@@ -19,7 +20,7 @@ public class ResourceGenerator : MonoBehaviour {
 
     private void Start() {
         int maxResourceAmount = resourceGeneratorData.maxResourceAmount;
-        int nearbyResourceNodeAmount = GetNearbyResourceNodeAmount(resourceGeneratorData, transform.position);
+        int nearbyResourceNodeAmount = GetNearbyResourceNodeAmount(resourceGeneratorData, transform.position, out List<ResourceNode> _);
 
         if (nearbyResourceNodeAmount == 0) {
             enabled = false;
@@ -68,14 +69,23 @@ public class ResourceGenerator : MonoBehaviour {
         return enabled;
     }
 
-    public static int GetNearbyResourceNodeAmount(ResourceGeneratorData resourceGeneratorData, Vector3 position) {
-        Collider2D[] collider2DArray = Physics2D.OverlapCircleAll(position, resourceGeneratorData.resourceDetectionRadius);
+    public static int GetNearbyResourceNodeAmount(
+        ResourceGeneratorData resourceGeneratorData,
+        Vector3 position,
+        out List<ResourceNode> nearbyResourceNodeList
+    ) {
+        nearbyResourceNodeList = new List<ResourceNode>();
+        Collider2D[] collider2DArray = Physics2D.OverlapCircleAll(
+            position,
+            resourceGeneratorData.resourceDetectionRadius
+        );
         int maxResourceAmount = resourceGeneratorData.maxResourceAmount;
 
         int nearbyResourceNodeAmount = 0;
         foreach (Collider2D collider2D in collider2DArray) {
             if (collider2D.TryGetComponent(out ResourceNode resourceNode) && resourceNode.GetResourceSO() == resourceGeneratorData.resourceSO) {
                 nearbyResourceNodeAmount++;
+                nearbyResourceNodeList.Add(resourceNode);
             }
         }
 
@@ -84,7 +94,7 @@ public class ResourceGenerator : MonoBehaviour {
 
     public static int GetEfficiencyPercentage(ResourceGeneratorData resourceGeneratorData, Vector3 position) {
         int maxResourceAmount = resourceGeneratorData.maxResourceAmount;
-        int nearbyResourceNodeAmount = GetNearbyResourceNodeAmount(resourceGeneratorData, position);
+        int nearbyResourceNodeAmount = GetNearbyResourceNodeAmount(resourceGeneratorData, position, out List<ResourceNode> _);
 
         return Mathf.RoundToInt((float)nearbyResourceNodeAmount / maxResourceAmount * 100f);
     }
