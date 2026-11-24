@@ -22,7 +22,7 @@ public class Enemy : MonoBehaviour, IHasHealth, IDamageable, ITargetable, IRequi
     private void Start() {
         healthSystem.OnDied += HealthSystem_OnDied;
 
-        targetTransform = BuildingManager.Instance.GetHQBuilding().transform;
+        SetDefaultTarget();
     }
 
     private void Update() {
@@ -63,7 +63,15 @@ public class Enemy : MonoBehaviour, IHasHealth, IDamageable, ITargetable, IRequi
         if (targetingSystem.GetCurrentTarget() is Building building && building != null) {
             targetTransform = building.transform;
         } else {
-            targetTransform = BuildingManager.Instance.GetHQBuilding().transform;
+            SetDefaultTarget();
+        }
+    }
+
+    private void SetDefaultTarget() {
+        Building hqBuilding = BuildingManager.Instance.GetHQBuilding();
+
+        if (hqBuilding != null) {
+            targetTransform = hqBuilding.transform;
         }
     }
 

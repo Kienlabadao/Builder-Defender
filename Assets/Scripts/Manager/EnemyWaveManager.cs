@@ -153,6 +153,10 @@ public class EnemyWaveManager : MonoBehaviour {
         return waveNumber;
     }
 
+    public int GetWavesSurvivedNumber() {
+        return waveNumber - 1;
+    }
+
     public Vector3 GetSpawnPosition() {
         return spawnPositionTransform.position;
     }

@@ -7,6 +7,7 @@ public class Building : MonoBehaviour, IHasHealth, IDamageable, ITargetable, ISe
     public event EventHandler OnBuildingHovered;
     public event EventHandler OnBuildingSelected;
     public event EventHandler OnBuildingDeselected;
+    public event EventHandler OnBuildingDestroyed;
 
     [SerializeField] private BuildingSO buildingSO;
 
@@ -14,9 +15,7 @@ public class Building : MonoBehaviour, IHasHealth, IDamageable, ITargetable, ISe
 
     private void Awake() {
         healthSystem = GetComponent<HealthSystem>();
-    }
 
-    private void Start() {
         healthSystem.OnDied += HealthSystem_OnDied;
     }
 
@@ -24,7 +23,9 @@ public class Building : MonoBehaviour, IHasHealth, IDamageable, ITargetable, ISe
         healthSystem.OnDied -= HealthSystem_OnDied;
     }
 
-    private void HealthSystem_OnDied(object sender, System.EventArgs e) {
+    private void HealthSystem_OnDied(object sender, EventArgs e) {
+        OnBuildingDestroyed?.Invoke(this, EventArgs.Empty);
+
         Destroy(gameObject);
     }
 

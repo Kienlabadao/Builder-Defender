@@ -10,6 +10,7 @@ public class BuildingManager : MonoBehaviour {
         public BuildingSO activeBuildingSO;
     }
     public event EventHandler OnBuildModeInactive;
+    public event EventHandler OnHQBuildingDestroyed;
 
     [SerializeField] private Building hqBuilding;
     [SerializeField] private float maxConstructionRadius = 25f;
@@ -22,6 +23,8 @@ public class BuildingManager : MonoBehaviour {
             Debug.LogError("There is more than one BuildingManager instance!");
         }
         Instance = this;
+
+        hqBuilding.OnBuildingDestroyed += HQBuilding_OnBuildingDestroyed;
     }
 
     private void Start() {
@@ -53,6 +56,11 @@ public class BuildingManager : MonoBehaviour {
 
     private void OnDestroy() {
         GameInput.Instance.OnInteractAction -= GameInput_OnInteractAction;
+        hqBuilding.OnBuildingDestroyed -= HQBuilding_OnBuildingDestroyed;
+    }
+
+    private void HQBuilding_OnBuildingDestroyed(object sender, EventArgs e) {
+        OnHQBuildingDestroyed?.Invoke(this, EventArgs.Empty);
     }
 
     private void GameInput_OnInteractAction(object sender, EventArgs e) {
