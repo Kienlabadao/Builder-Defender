@@ -2,12 +2,14 @@ using System;
 using UnityEngine;
 
 [RequireComponent(typeof(HealthSystem))]
-public class Building : MonoBehaviour, IHasHealth, IDamageable, ITargetable, ISelectable {
+public class Building : MonoBehaviour, IHasHealth, IDamageable, IHealable, ITargetable, ISelectable {
     public event EventHandler OnBuildingUnhovered;
     public event EventHandler OnBuildingHovered;
     public event EventHandler OnBuildingSelected;
     public event EventHandler OnBuildingDeselected;
     public event EventHandler OnBuildingDestroyed;
+    public event EventHandler OnDamaged;
+    public event EventHandler OnHealed;
 
     [SerializeField] private BuildingSO buildingSO;
 
@@ -41,8 +43,38 @@ public class Building : MonoBehaviour, IHasHealth, IDamageable, ITargetable, ISe
         return buildingSO.healthAmountMax;
     }
 
+    public float GetHealthAmount() {
+        return healthSystem.GetHealthAmount();
+    }
+
+    public float GetMissingHealthAmount() {
+        return GetHealthAmountMax() - GetHealthAmount();
+    }
+
+    public bool IsFullHealth() {
+        return healthSystem.IsFullHealth();
+    }
+
+    public bool CanRepair() {
+        return !IsFullHealth();
+    }
+
     public void Damage(float damageAmount) {
         healthSystem.Damage(damageAmount);
+
+        OnDamaged?.Invoke(this, EventArgs.Empty);
+    }
+
+    public void Heal(float healAmount) {
+        healthSystem.Heal(healAmount);
+
+        OnHealed?.Invoke(this, EventArgs.Empty);
+    }
+
+    public void HealFull() {
+        healthSystem.HealFull();
+
+        OnHealed?.Invoke(this, EventArgs.Empty);
     }
 
     public Vector3 GetTargetPosition() {

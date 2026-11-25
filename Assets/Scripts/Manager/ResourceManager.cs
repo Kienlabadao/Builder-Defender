@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ResourceManager : MonoBehaviour {
+    [Serializable]
+    public struct RepairResourceCostData {
+        public ResourceAmountData resourceAmountData;
+        public float repairHPAmount;
+    }
+
     public static ResourceManager Instance { get; private set; }
 
     public event EventHandler OnResourceAmountChanged;
@@ -10,6 +16,7 @@ public class ResourceManager : MonoBehaviour {
     [SerializeField] private ResourceListSO resourceListSO;
     [SerializeField] private ResourceAmountData[] startingResourceArray;
     [SerializeField] private float refundBuildingResourcePercentage = .6f;
+    [SerializeField] private RepairResourceCostData[] repairResourceCostDataArray;
 
     private Dictionary<ResourceSO, int> resourceAmountDictionary;
 
@@ -75,5 +82,37 @@ public class ResourceManager : MonoBehaviour {
                 Mathf.FloorToInt(resourceAmountData.amount * refundBuildingResourcePercentage)
             );
         }
+    }
+
+    public ResourceAmountData[] GetRepairResourceCost(float missingHealth) {
+        List<ResourceAmountData> resourceAmountCost = new List<ResourceAmountData>();
+
+        if (missingHealth > 0f) {
+            foreach (RepairResourceCostData repairResourceCostData in repairResourceCostDataArray) {
+                ResourceAmountData resourceAmountData = repairResourceCostData.resourceAmountData;
+                int resourceRepairCost = Mathf.CeilToInt(
+                    missingHealth / repairResourceCostData.repairHPAmount * resourceAmountData.amount
+                );
+
+                resourceAmountCost.Add(new ResourceAmountData {
+                    resourceSO = resourceAmountData.resourceSO,
+                    amount = resourceRepairCost
+                });
+            }
+        }
+
+        return resourceAmountCost.ToArray();
+    }
+
+    public bool CanAffordRepair(float missingHealth) {
+        ResourceAmountData[] resourceAmountCost = GetRepairResourceCost(missingHealth);
+
+        return CanAfford(resourceAmountCost);
+    }
+
+    public void SpendRepair(float missingHealth) {
+        ResourceAmountData[] resourceAmountCost = GetRepairResourceCost(missingHealth);
+
+        SpendResource(resourceAmountCost);
     }
 }

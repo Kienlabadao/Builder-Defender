@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -5,6 +6,8 @@ using UnityEngine;
 [RequireComponent(typeof(TargetingSystem))]
 public class Enemy : MonoBehaviour, IHasHealth, IDamageable, ITargetable, IRequiresTargetSystem {
     private const float TARGET_MAX_RADIUS = 10f;
+
+    public event EventHandler OnDamaged;
 
     [SerializeField] private EnemySO enemySO;
 
@@ -17,11 +20,11 @@ public class Enemy : MonoBehaviour, IHasHealth, IDamageable, ITargetable, IRequi
         rigidbody2D = GetComponent<Rigidbody2D>();
         healthSystem = GetComponent<HealthSystem>();
         targetingSystem = GetComponent<TargetingSystem>();
+
+        healthSystem.OnDied += HealthSystem_OnDied;
     }
 
     private void Start() {
-        healthSystem.OnDied += HealthSystem_OnDied;
-
         SetDefaultTarget();
     }
 
@@ -79,8 +82,22 @@ public class Enemy : MonoBehaviour, IHasHealth, IDamageable, ITargetable, IRequi
         return enemySO.healthAmountMax;
     }
 
+    public float GetHealthAmount() {
+        return healthSystem.GetHealthAmount();
+    }
+
+    public float GetMissingHealthAmount() {
+        return GetHealthAmountMax() - GetHealthAmount();
+    }
+
+    public bool IsFullHealth() {
+        return healthSystem.IsFullHealth();
+    }
+
     public void Damage(float damageAmount) {
         healthSystem.Damage(damageAmount);
+
+        OnDamaged?.Invoke(this, EventArgs.Empty);
     }
 
     public Vector3 GetTargetPosition() {

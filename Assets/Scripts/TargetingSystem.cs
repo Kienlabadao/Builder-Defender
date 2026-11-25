@@ -11,6 +11,15 @@ public class TargetingSystem : MonoBehaviour {
     private float lookForTargetTimerMax;
     private float lookForTargetTimer;
 
+    private void OnValidate() {
+        if (!requiresTargetSystemGameObject.TryGetComponent<IRequiresTargetSystem>(out _)) {
+            Debug.LogError(
+                $"Game Object {requiresTargetSystemGameObject.name} does not have a component that implements IRequiresTargetSystem!",
+                this
+            );
+        }
+    }
+
     private void Awake() {
         requiresTargetSystem = requiresTargetSystemGameObject.GetComponent<IRequiresTargetSystem>();
         if (requiresTargetSystem == null) {

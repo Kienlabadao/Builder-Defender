@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 [RequireComponent(typeof(Button))]
 [RequireComponent(typeof(MouseEnterExitEvents))]
-public class BuildingTypeSelectSingleUI : MonoBehaviour {
+public class BuildingTypeSelectButtonSingleUI : MonoBehaviour {
     [SerializeField] private Image iconImage;
     [SerializeField] private Image selectedImage;
     [SerializeField] private Sprite arrowSprite;
@@ -21,9 +21,7 @@ public class BuildingTypeSelectSingleUI : MonoBehaviour {
         mouseEnterExitEvents = GetComponent<MouseEnterExitEvents>();
 
         selectedImage.enabled = false;
-    }
 
-    private void Start() {
         mouseEnterExitEvents.OnMouseEnter += MouseEnterExitEvents_OnMouseEnter;
         mouseEnterExitEvents.OnMouseExit += MouseEnterExitEvents_OnMouseExit;
     }

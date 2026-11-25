@@ -5,27 +5,35 @@ public class HealthBarUI : MonoBehaviour {
     [SerializeField] private HealthSystem healthSystem;
     [SerializeField] private Image barImage;
 
-    private void Start() {
+    private void Awake() {
         healthSystem.OnDamaged += HealthSystem_OnDamaged;
+        healthSystem.OnHealed += HealthSystem_OnHealed;
+    }
 
+    private void Start() {
         UpdateBar();
     }
 
     private void OnDestroy() {
         healthSystem.OnDamaged -= HealthSystem_OnDamaged;
+        healthSystem.OnHealed -= HealthSystem_OnHealed;
     }
 
     private void HealthSystem_OnDamaged(object sender, System.EventArgs e) {
         UpdateBar();
     }
 
+    private void HealthSystem_OnHealed(object sender, System.EventArgs e) {
+        UpdateBar();
+    }
+
     private void UpdateBar() {
         barImage.fillAmount = healthSystem.GetHealthAmountNormalized();
 
-        UpdateHealthBarVisible();
+        UpdateHealthBarVisibility();
     }
 
-    private void UpdateHealthBarVisible() {
+    private void UpdateHealthBarVisibility() {
         if (healthSystem.IsFullHealth()) {
             Hide();
         } else {

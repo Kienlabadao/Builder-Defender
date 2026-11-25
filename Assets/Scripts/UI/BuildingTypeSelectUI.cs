@@ -30,7 +30,7 @@ public class BuildingTypeSelectUI : MonoBehaviour {
 
     private Transform InstantiateButtonTransform(BuildingSO buildingSO) {
         Transform buttonTransform = Instantiate(buttonTemplate, transform);
-        BuildingTypeSelectSingleUI buildingTypeSelectSingleUI = buttonTransform.GetComponent<BuildingTypeSelectSingleUI>();
+        BuildingTypeSelectButtonSingleUI buildingTypeSelectSingleUI = buttonTransform.GetComponent<BuildingTypeSelectButtonSingleUI>();
 
         buttonTransform.gameObject.SetActive(true);
 
@@ -59,9 +59,9 @@ public class BuildingTypeSelectUI : MonoBehaviour {
         foreach (BuildingSO buildingSO in buildingTypeTransformDictionary.Keys) {
             Transform buttonTransform = buildingTypeTransformDictionary[buildingSO];
 
-            buttonTransform.GetComponent<BuildingTypeSelectSingleUI>().SetSelected(buildingSO == activeBuildingSO);
+            buttonTransform.GetComponent<BuildingTypeSelectButtonSingleUI>().SetSelected(buildingSO == activeBuildingSO);
         }
 
-        arrowButton.GetComponent<BuildingTypeSelectSingleUI>().SetSelected(activeBuildingSO == null);
+        arrowButton.GetComponent<BuildingTypeSelectButtonSingleUI>().SetSelected(activeBuildingSO == null);
     }
 }
