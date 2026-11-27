@@ -22,7 +22,10 @@ public class BuildingGhostVisual : MonoBehaviour {
         buildingGhost.OnInvalidPlacementPosition -= BuildingGhost_OnInvalidPlacementPosition;
     }
 
-    private void BuildingGhost_OnInvalidPlacementPosition(object sender, System.EventArgs e) {
+    private void BuildingGhost_OnInvalidPlacementPosition(
+        object sender,
+        BuildingGhost.OnInvalidPlacementPositionEventArgs e
+    ) {
         spriteRenderer.material.SetColor(SHADER_ID_HIGHLIGHT_COLOR, invalidPlacementColor);
     }
 

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BuildingGhost : MonoBehaviour {
+    public static BuildingGhost Instance { get; private set; }
+
     [SerializeField] private SpriteRenderer ghostSpriteRenderer;
     [SerializeField] private GeneratorEfficiencyUI generatorEfficiencyUI;
 
@@ -12,13 +14,22 @@ public class BuildingGhost : MonoBehaviour {
     }
     public event EventHandler OnBuildingGhostInactive;
     public event EventHandler OnValidPlacementPosition;
-    public event EventHandler OnInvalidPlacementPosition;
+    public event EventHandler<OnInvalidPlacementPositionEventArgs> OnInvalidPlacementPosition;
+    public class OnInvalidPlacementPositionEventArgs {
+        public List<BuildingManager.BuildingPlacementError> buildingPlacementErrorList;
+    }
 
     private BuildingSO buildingSO;
     private bool isBuildMode;
     private List<ResourceNode> previousNearbyResourceNodeList;
+    private int nearbyResourceNodeAmount = 0;
 
     private void Awake() {
+        if (Instance != null && Instance != this) {
+            Debug.LogError("There is more than one BuildingGhost instance!");
+        }
+        Instance = this;
+
         previousNearbyResourceNodeList = new List<ResourceNode>();
     }
 
@@ -59,19 +70,23 @@ public class BuildingGhost : MonoBehaviour {
     }
 
     private void ValidateSpawnPosition(Vector3 position) {
-        if (BuildingManager.Instance.CanSpawnBuildingAtPosition(position, out string _)) {
+        if (BuildingManager.Instance.CanSpawnBuildingAtPosition(position,
+            out List<BuildingManager.BuildingPlacementError> buildingPlacementErrorList)
+        ) {
             OnValidPlacementPosition?.Invoke(this, EventArgs.Empty);
         } else {
-            OnInvalidPlacementPosition?.Invoke(this, EventArgs.Empty);
+            OnInvalidPlacementPosition?.Invoke(this, new OnInvalidPlacementPositionEventArgs {
+                buildingPlacementErrorList = buildingPlacementErrorList
+            });
         }
     }
 
     private void HandleHighlightNearbyResourceNode(Vector3 position) {
-        ResourceGenerator.GetNearbyResourceNodeAmount(
-                    BuildingManager.Instance.GetActiveBuildingResourceGeneratorData(),
-                    position,
-                    out List<ResourceNode> nearbyResourceNodeList
-                );
+        nearbyResourceNodeAmount = ResourceGenerator.GetNearbyResourceNodeAmount(
+            BuildingManager.Instance.GetActiveBuildingResourceGeneratorData(),
+            position,
+            out List<ResourceNode> nearbyResourceNodeList
+        );
 
         foreach (ResourceNode resourceNode in nearbyResourceNodeList) {
             if (previousNearbyResourceNodeList.Contains(resourceNode)) {
@@ -90,6 +105,7 @@ public class BuildingGhost : MonoBehaviour {
 
     private void Show(BuildingSO buildingSO) {
         isBuildMode = true;
+        nearbyResourceNodeAmount = 0;
         previousNearbyResourceNodeList = new List<ResourceNode>();
         this.buildingSO = buildingSO;
         ghostSpriteRenderer.sprite = buildingSO.sprite;
@@ -121,5 +137,9 @@ public class BuildingGhost : MonoBehaviour {
 
     public BuildingSO GetBuildingSO() {
         return buildingSO;
+    }
+
+    public int GetNearbyResourceNodeAmount() {
+        return nearbyResourceNodeAmount;
     }
 }

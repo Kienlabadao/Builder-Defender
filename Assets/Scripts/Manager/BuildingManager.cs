@@ -1,9 +1,18 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class BuildingManager : MonoBehaviour {
     public static BuildingManager Instance { get; private set; }
+
+    public enum BuildingPlacementError {
+        NoAciveBuilding,
+        CannotBePlaced,
+        AreaNotClear,
+        TooCloseToSameBuilding,
+        TooFarFromAnotherBuilding
+    }
 
     public event EventHandler<OnBuildModeActiveEventArgs> OnBuildModeActive;
     public class OnBuildModeActiveEventArgs {
@@ -40,12 +49,15 @@ public class BuildingManager : MonoBehaviour {
                 if (ResourceManager.Instance.CanAfford(activeBuildingSO.constructionResourceCostArray)) {
                     Vector3 mouseWorldPosition = UtilsClass.GetMouseWorldPosition();
 
-                    if (CanSpawnBuilding(activeBuildingSO, mouseWorldPosition, out string errorMessage)) {
+                    if (CanSpawnBuilding(activeBuildingSO,
+                        mouseWorldPosition,
+                        out List<BuildingPlacementError> buildingPlacementErrorList)
+                    ) {
                         ResourceManager.Instance.SpendResource(activeBuildingSO.constructionResourceCostArray);
 
                         BuildingConstruction.SpawnBuildingConstruction(mouseWorldPosition, activeBuildingSO);
                     } else {
-                        TooltipUI.Instance.Show(errorMessage, true);
+                        TooltipUI.Instance.Show(GetPlacementErrorMessage(buildingPlacementErrorList[0]), true);
                     }
                 } else {
                     TooltipUI.Instance.Show("Cannot afford!", activeBuildingSO.constructionResourceCostArray, true);
@@ -67,10 +79,16 @@ public class BuildingManager : MonoBehaviour {
         isInteractInputRecieved = true;
     }
 
-    private bool CanSpawnBuilding(BuildingSO buildingSO, Vector3 position, out string errorMessage) {
+    private bool CanSpawnBuilding(
+        BuildingSO buildingSO,
+        Vector3 position,
+        out List<BuildingPlacementError> buildingPlacementErrorList
+    ) {
+        buildingPlacementErrorList = new List<BuildingPlacementError>();
+
         if (!buildingSO.canBePlaced) {
-            errorMessage = $"Building {buildingSO.name} aren't allowed to be placed!";
-            Debug.LogWarning(errorMessage);
+            buildingPlacementErrorList.Add(BuildingPlacementError.CannotBePlaced);
+            Debug.LogWarning($"Building {buildingSO.name} aren't allowed to be placed!");
 
             return false;
         }
@@ -79,9 +97,7 @@ public class BuildingManager : MonoBehaviour {
 
         Collider2D[] collider2DArray = Physics2D.OverlapBoxAll(position + (Vector3)boxCollider2D.offset, boxCollider2D.size, 0f);
         if (collider2DArray.Length != 0) {
-            errorMessage = "Area is not clear!";
-
-            return false;
+            buildingPlacementErrorList.Add(BuildingPlacementError.AreaNotClear);
         }
 
         collider2DArray = Physics2D.OverlapCircleAll(position, buildingSO.minConstructionRadius);
@@ -98,28 +114,36 @@ public class BuildingManager : MonoBehaviour {
                 continue;
             }
 
-            errorMessage = "Too close to another building of the same type!";
-            return false;
+            buildingPlacementErrorList.Add(BuildingPlacementError.TooCloseToSameBuilding);
+            break;
         }
 
         collider2DArray = Physics2D.OverlapCircleAll(position, maxConstructionRadius);
+        bool isBuildingNearby = false;
         foreach (Collider2D collider2D in collider2DArray) {
             if (collider2D.TryGetComponent(out Building _)) {
-                errorMessage = null;
+                isBuildingNearby = true;
 
-                return true;
+                break;
             }
         }
 
-        errorMessage = "Too far from any other building!";
-        return false;
+        if (!isBuildingNearby) {
+            buildingPlacementErrorList.Add(BuildingPlacementError.TooFarFromAnotherBuilding);
+        }
+
+        return buildingPlacementErrorList.Count == 0;
     }
 
-    public bool CanSpawnBuildingAtPosition(Vector3 position, out string errorMessage) {
+    public bool CanSpawnBuildingAtPosition(
+        Vector3 position,
+        out List<BuildingPlacementError> buildingPlacementErrorList
+    ) {
         if (activeBuildingSO) {
-            return CanSpawnBuilding(activeBuildingSO, position, out errorMessage);
+            return CanSpawnBuilding(activeBuildingSO, position, out buildingPlacementErrorList);
         } else {
-            errorMessage = "No currently active building!";
+            buildingPlacementErrorList = new List<BuildingPlacementError> { BuildingPlacementError.NoAciveBuilding };
+
             return false;
         }
     }
@@ -165,5 +189,16 @@ public class BuildingManager : MonoBehaviour {
         } else {
             return null;
         }
+    }
+
+    private static string GetPlacementErrorMessage(BuildingPlacementError error) {
+        return error switch {
+            BuildingPlacementError.NoAciveBuilding => "No currently active building!",
+            BuildingPlacementError.CannotBePlaced => "This building cannot be placed!",
+            BuildingPlacementError.AreaNotClear => "Area is not clear!",
+            BuildingPlacementError.TooCloseToSameBuilding => "Too close to another building of the same type!",
+            BuildingPlacementError.TooFarFromAnotherBuilding => "Too far from any other building!",
+            _ => throw new ArgumentOutOfRangeException(nameof(error))
+        };
     }
 }

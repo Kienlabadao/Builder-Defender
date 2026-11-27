@@ -19,16 +19,12 @@ public class ResourceGenerator : MonoBehaviour {
     }
 
     private void Start() {
-        int maxResourceAmount = resourceGeneratorData.maxResourceAmount;
         int nearbyResourceNodeAmount = GetNearbyResourceNodeAmount(resourceGeneratorData, transform.position, out List<ResourceNode> _);
 
         if (nearbyResourceNodeAmount == 0) {
             enabled = false;
         } else {
-            // Calculate timer reduction percentage based on the resource amount. Reduce 0% at 1 resource. all the way to maxTimerReduction when nearbyResourceNodeAmount equal to maxResourceAmount, hence the -1
-            float timerReduction = MAX_TIMER_REDUCTION * ((float)(nearbyResourceNodeAmount - 1) / (maxResourceAmount - 1));
-
-            generateResourceTimerMax = resourceGeneratorData.generateResourceTimerMax * (1 - timerReduction);
+            generateResourceTimerMax = GetGenerateResourceTimerMax(resourceGeneratorData, nearbyResourceNodeAmount);
             generateResourceTimer = generateResourceTimerMax;
         }
 
@@ -58,11 +54,7 @@ public class ResourceGenerator : MonoBehaviour {
     }
 
     public float GetAmountGeneratedPerSecond() {
-        if (generateResourceTimerMax <= 0f) {
-            return 0f;
-        }
-
-        return 1f / generateResourceTimerMax;
+        return GetGeneratorAmountGeneratedPerSecond(generateResourceTimerMax);
     }
 
     public bool IsEnabled() {
@@ -97,5 +89,39 @@ public class ResourceGenerator : MonoBehaviour {
         int nearbyResourceNodeAmount = GetNearbyResourceNodeAmount(resourceGeneratorData, position, out List<ResourceNode> _);
 
         return Mathf.RoundToInt((float)nearbyResourceNodeAmount / maxResourceAmount * 100f);
+    }
+
+    public static float GetGenerateResourceTimerMax(
+        ResourceGeneratorData resourceGeneratorData,
+        int nearbyResourceNodeAmount
+    ) {
+        if (nearbyResourceNodeAmount <= 0) {
+            return 0f;
+        }
+
+        int maxResourceAmount = resourceGeneratorData.maxResourceAmount;
+
+        // Calculate timer reduction percentage based on the resource amount. Reduce 0% at 1 resource. all the way to maxTimerReduction when nearbyResourceNodeAmount equal to maxResourceAmount, hence the -1
+        float timerReduction = MAX_TIMER_REDUCTION * ((float)(nearbyResourceNodeAmount - 1) / (maxResourceAmount - 1));
+
+        return resourceGeneratorData.generateResourceTimerMax * (1 - timerReduction);
+    }
+
+    public static float GetGeneratorAmountGeneratedPerSecond(float generateResourceTimerMax) {
+        if (generateResourceTimerMax <= 0f) {
+            return 0f;
+        }
+
+        return 1f / generateResourceTimerMax;
+    }
+
+    public static float GetGeneratorAmountGeneratedPerSecond(
+        ResourceGeneratorData resourceGeneratorData,
+        int nearbyResourceNodeAmount
+    ) {
+        return GetGeneratorAmountGeneratedPerSecond(GetGenerateResourceTimerMax(
+            resourceGeneratorData,
+            nearbyResourceNodeAmount
+        ));
     }
 }
