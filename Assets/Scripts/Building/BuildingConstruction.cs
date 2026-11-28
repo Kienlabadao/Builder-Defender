@@ -15,7 +15,9 @@ public class BuildingConstruction : MonoBehaviour {
         constructionTimer -= Time.deltaTime;
 
         if (constructionTimer <= 0f) {
-            Instantiate(buildingSO.prefab, transform.position, Quaternion.identity);
+            Instantiate(buildingSO.prefab, transform.position, Quaternion.identity, transform.parent);
+
+            SoundManager.Instance.PlaySound(SoundManager.Sound.BuildingPlaced);
 
             Destroy(gameObject);
         }
@@ -41,13 +43,17 @@ public class BuildingConstruction : MonoBehaviour {
         return buildingSO;
     }
 
-    public static BuildingConstruction SpawnBuildingConstruction(Vector3 position, BuildingSO buildingSO) {
-        Transform buildingConstructionTransform = Instantiate(
+    public static BuildingConstruction SpawnBuildingConstruction(
+        Vector3 position,
+        BuildingSO buildingSO,
+        Transform parent = null
+    ) {
+        BuildingConstruction buildingConstruction = Instantiate(
             SpawnDatabase.GetSpawnDatabaseSO().buildingConstructionPrefab,
             position,
-            Quaternion.identity
+            Quaternion.identity,
+            parent
         );
-        BuildingConstruction buildingConstruction = buildingConstructionTransform.GetComponent<BuildingConstruction>();
 
         buildingConstruction.SetBuildingSO(buildingSO);
 

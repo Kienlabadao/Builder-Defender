@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e2351411356fb4391ccc9232cf9277, type: 3}
+  m_Name: _AudioClipRefsSO
+  m_EditorClassIdentifier: Assembly-CSharp::AudioClipRefsSO
+  buildingPlaced: {fileID: 11400000, guid: 96c1caabb18049d4687939cf652a8720, type: 2}
+  buildingDamaged: {fileID: 11400000, guid: b0070b4e8f5ca42419bb9aba3ec628dd, type: 2}
+  buildingDestroyed: {fileID: 11400000, guid: 040b7ad2eb854cd46a13d58e3dd1d573, type: 2}
+  enemyDie: {fileID: 11400000, guid: 49d94ef9dbf9b2542a242935a3c491d4, type: 2}
+  enemyHit: {fileID: 11400000, guid: cf7bd30213c88914bab9a96491e41cc2, type: 2}
+  gameOver: {fileID: 11400000, guid: 944aa78e623a2994db441b3ec0064a1a, type: 2}

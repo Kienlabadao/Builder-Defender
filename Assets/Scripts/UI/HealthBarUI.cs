@@ -8,15 +8,17 @@ public class HealthBarUI : MonoBehaviour {
     private void Awake() {
         healthSystem.OnDamaged += HealthSystem_OnDamaged;
         healthSystem.OnHealed += HealthSystem_OnHealed;
-    }
-
-    private void Start() {
-        UpdateBar();
+        healthSystem.OnReset += HealthSystem_OnReset;
     }
 
     private void OnDestroy() {
         healthSystem.OnDamaged -= HealthSystem_OnDamaged;
         healthSystem.OnHealed -= HealthSystem_OnHealed;
+        healthSystem.OnReset -= HealthSystem_OnReset;
+    }
+
+    private void HealthSystem_OnReset(object sender, System.EventArgs e) {
+        UpdateBar();
     }
 
     private void HealthSystem_OnDamaged(object sender, System.EventArgs e) {

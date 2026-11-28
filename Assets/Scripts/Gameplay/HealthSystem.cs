@@ -4,6 +4,7 @@ using UnityEngine;
 public class HealthSystem : MonoBehaviour {
     [SerializeField] private GameObject hasHealthGameObject;
 
+    public event EventHandler OnReset;
     public event EventHandler OnDamaged;
     public event EventHandler OnHealed;
     public event EventHandler OnDied;
@@ -30,7 +31,8 @@ public class HealthSystem : MonoBehaviour {
 
     private void Start() {
         healthAmountMax = hasHealth.GetHealthAmountMax();
-        healthAmount = healthAmountMax;
+
+        ResetHealthSystem();
     }
 
     public void Damage(float damageAmount) {
@@ -70,5 +72,11 @@ public class HealthSystem : MonoBehaviour {
 
     public float GetHealthAmountNormalized() {
         return (float)healthAmount / healthAmountMax;
+    }
+
+    public void ResetHealthSystem() {
+        healthAmount = healthAmountMax;
+
+        OnReset?.Invoke(this, EventArgs.Empty);
     }
 }

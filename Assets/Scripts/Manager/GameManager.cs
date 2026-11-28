@@ -38,6 +38,13 @@ public class GameManager : MonoBehaviour {
     private void ChangeState(State state) {
         this.state = state;
 
+        switch (state) {
+            case State.GameOver:
+                SoundManager.Instance.PlaySound(SoundManager.Sound.GameOver);
+
+                break;
+        }
+
         OnStateChanged?.Invoke(this, EventArgs.Empty);
     }
 

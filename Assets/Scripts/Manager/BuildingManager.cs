@@ -21,6 +21,7 @@ public class BuildingManager : MonoBehaviour {
     public event EventHandler OnBuildModeInactive;
     public event EventHandler OnHQBuildingDestroyed;
 
+    [SerializeField] private Transform buildingContainer;
     [SerializeField] private Building hqBuilding;
     [SerializeField] private float maxConstructionRadius = 25f;
 
@@ -37,7 +38,7 @@ public class BuildingManager : MonoBehaviour {
     }
 
     private void Start() {
-        GameInput.Instance.OnInteractAction += GameInput_OnInteractAction;
+        GameInputManager.Instance.OnInteractAction += GameInput_OnInteractAction;
     }
 
     private void Update() {
@@ -55,7 +56,13 @@ public class BuildingManager : MonoBehaviour {
                     ) {
                         ResourceManager.Instance.SpendResource(activeBuildingSO.constructionResourceCostArray);
 
-                        BuildingConstruction.SpawnBuildingConstruction(mouseWorldPosition, activeBuildingSO);
+                        BuildingConstruction.SpawnBuildingConstruction(
+                            mouseWorldPosition,
+                            activeBuildingSO,
+                            buildingContainer
+                        );
+
+                        SoundManager.Instance.PlaySound(SoundManager.Sound.BuildingPlaced);
                     } else {
                         TooltipUI.Instance.Show(GetPlacementErrorMessage(buildingPlacementErrorList[0]), true);
                     }
@@ -67,7 +74,7 @@ public class BuildingManager : MonoBehaviour {
     }
 
     private void OnDestroy() {
-        GameInput.Instance.OnInteractAction -= GameInput_OnInteractAction;
+        GameInputManager.Instance.OnInteractAction -= GameInput_OnInteractAction;
         hqBuilding.OnBuildingDestroyed -= HQBuilding_OnBuildingDestroyed;
     }
 

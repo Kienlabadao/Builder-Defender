@@ -1,8 +1,8 @@
 using System;
 using UnityEngine;
 
-public class GameInput : MonoBehaviour {
-    public static GameInput Instance { get; private set; }
+public class GameInputManager : MonoBehaviour {
+    public static GameInputManager Instance { get; private set; }
 
     public event EventHandler OnInteractAction;
 

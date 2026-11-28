@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dea2dee892782f4a93595b89cb8660d, type: 3}
   m_Name: _SpawnDatabaseSO
   m_EditorClassIdentifier: Assembly-CSharp::SpawnDatabaseSO
-  buildingConstructionPrefab: {fileID: 2842483605628751799, guid: 2c9a8db5ba3612b43950af04e87f45d4, type: 3}
+  buildingConstructionPrefab: {fileID: 4961825073450617176, guid: 2c9a8db5ba3612b43950af04e87f45d4, type: 3}
+  projectilePrefab: {fileID: 4518268033611340289, guid: 9af50cb1603da9f47876803653a13cad, type: 3}

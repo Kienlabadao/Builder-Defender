@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: Enemy
   m_EditorClassIdentifier: Assembly-CSharp::EnemyTypeSO
   enemyName: Enemy
-  prefab: {fileID: 3416487428555759176, guid: e3377829dabf94647ad6f4686a032362, type: 3}
+  enemyPrefab: {fileID: 5847236015784222648, guid: e3377829dabf94647ad6f4686a032362, type: 3}
   healthAmountMax: 30
   moveSpeed: 6
   damage: 10
   lookForTargetTimerMax: 0.2
+  poolInitialSize: 50
+  poolMaxSize: 200

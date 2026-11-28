@@ -32,7 +32,8 @@ public class TargetingSystem : MonoBehaviour {
         maxRange = requiresTargetSystem.GetMaxRange();
         targetType = requiresTargetSystem.GetTargetType();
         lookForTargetTimerMax = requiresTargetSystem.GetTargetScanInterval();
-        lookForTargetTimer = lookForTargetTimerMax;
+
+        ResetTargetingSystem();
     }
 
     private void Update() {
@@ -94,5 +95,9 @@ public class TargetingSystem : MonoBehaviour {
 
     public ITargetable GetCurrentTarget() {
         return currentTarget;
+    }
+
+    public void ResetTargetingSystem() {
+        lookForTargetTimer = lookForTargetTimerMax;
     }
 }

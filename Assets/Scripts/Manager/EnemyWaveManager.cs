@@ -67,7 +67,7 @@ public class EnemyWaveManager : MonoBehaviour {
                         int waveSpawningDataIndex = UnityEngine.Random.Range(0, currentWaveSpawningDataList.Count - 1);
                         WaveSpawningData waveSpawningData = currentWaveSpawningDataList[waveSpawningDataIndex];
 
-                        Enemy.SpawnEnemy(waveSpawningData.enemySO, spawnPosition);
+                        EnemySpawnManager.Instance.SpawnEnemy(waveSpawningData.enemySO, spawnPosition);
                         waveSpawningData.spawnAmount--;
 
                         if (waveSpawningData.spawnAmount <= 0) {

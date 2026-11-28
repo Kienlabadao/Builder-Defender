@@ -8,7 +8,7 @@ public class DefenseBuilding : MonoBehaviour, IRequiresTargetSystem {
     private TargetingSystem targetingSystem;
     private DefenseBuildingData defenseBuildingData;
     private Enemy targetEnemy;
-    private float lookForTargetTimer;
+    private int previousTargetSpawnID;
     private float attackTimer;
 
     private void Awake() {
@@ -22,14 +22,18 @@ public class DefenseBuilding : MonoBehaviour, IRequiresTargetSystem {
     }
 
     private void HandleTargeting() {
-        Enemy previousTargetEnemy = targetEnemy;
-
         targetEnemy = targetingSystem.GetCurrentTarget() as Enemy;
 
+        if (targetEnemy == null || !targetEnemy.gameObject.activeSelf) {
+            return;
+        }
+
         // Reset timer everytime defense found a new target
-        if (targetEnemy != null && previousTargetEnemy != targetEnemy) {
+        if (targetEnemy.GetSpawnID() != previousTargetSpawnID) {
             attackTimer = defenseBuildingData.attackSpeed;
         }
+
+        previousTargetSpawnID = targetEnemy.GetSpawnID();
     }
 
     private void HandleShooting() {
@@ -39,7 +43,7 @@ public class DefenseBuilding : MonoBehaviour, IRequiresTargetSystem {
             if (attackTimer <= 0f) {
                 attackTimer = defenseBuildingData.attackSpeed;
 
-                ArrowProjectile.SpawnProjectile(
+                ProjectileSpawnManager.Instance.SpawnProjectile(
                     defenseBuildingData.projectileSO,
                     projectileSpawnPosition.position,
                     targetEnemy,

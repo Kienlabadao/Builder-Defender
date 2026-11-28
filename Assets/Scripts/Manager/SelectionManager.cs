@@ -20,7 +20,7 @@ public class SelectionManager : MonoBehaviour {
     }
 
     private void Start() {
-        GameInput.Instance.OnInteractAction += GameInput_OnInteractAction;
+        GameInputManager.Instance.OnInteractAction += GameInput_OnInteractAction;
         BuildingManager.Instance.OnBuildModeActive += BuildingManager_OnBuildModeActive;
     }
 
@@ -38,7 +38,7 @@ public class SelectionManager : MonoBehaviour {
     }
 
     private void OnDestroy() {
-        GameInput.Instance.OnInteractAction -= GameInput_OnInteractAction;
+        GameInputManager.Instance.OnInteractAction -= GameInput_OnInteractAction;
         BuildingManager.Instance.OnBuildModeActive -= BuildingManager_OnBuildModeActive;
     }
 

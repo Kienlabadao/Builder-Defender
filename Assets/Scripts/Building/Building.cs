@@ -28,6 +28,8 @@ public class Building : MonoBehaviour, IHasHealth, IDamageable, IHealable, ITarg
     private void HealthSystem_OnDied(object sender, EventArgs e) {
         OnBuildingDestroyed?.Invoke(this, EventArgs.Empty);
 
+        SoundManager.Instance.PlaySound(SoundManager.Sound.BuildingDestroyed);
+
         Destroy(gameObject);
     }
 
@@ -61,6 +63,8 @@ public class Building : MonoBehaviour, IHasHealth, IDamageable, IHealable, ITarg
 
     public void Damage(float damageAmount) {
         healthSystem.Damage(damageAmount);
+
+        SoundManager.Instance.PlaySound(SoundManager.Sound.BuildingDamaged);
 
         OnDamaged?.Invoke(this, EventArgs.Empty);
     }

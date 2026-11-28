@@ -46,26 +46,18 @@ public class CameraHandler : MonoBehaviour {
     }
 
     private void HandleMovement() {
-        Vector2 inputVector = GameInput.Instance.GetMovementVectorNormalized();
+        Vector2 inputVector = GameInputManager.Instance.GetMovementVectorNormalized();
         Vector3 moveDir = new(inputVector.x, inputVector.y, 0f);
 
         transform.position += moveSpeed * Time.deltaTime * moveDir;
     }
 
     private void HandleZoom() {
-        float zoomDelta;
-        switch (zoomDirection) {
-            case ZoomDirection.Normal:
-                zoomDelta = -GameInput.Instance.GetZoomDelta();
-
-                break;
-            case ZoomDirection.Inverted:
-                zoomDelta = GameInput.Instance.GetZoomDelta();
-
-                break;
-            default:
-                throw new NotImplementedException($"ZoomDirection {zoomDirection} not implemented!");
-        }
+        float zoomDelta = zoomDirection switch {
+            ZoomDirection.Normal => -GameInputManager.Instance.GetZoomDelta(),
+            ZoomDirection.Inverted => GameInputManager.Instance.GetZoomDelta(),
+            _ => throw new NotImplementedException($"ZoomDirection {zoomDirection} not implemented!"),
+        };
 
         targetOrthographicSize += zoomDelta * zoomAmount;
         targetOrthographicSize = Mathf.Clamp(targetOrthographicSize, minOrthographicSize, maxOrthographicSize);

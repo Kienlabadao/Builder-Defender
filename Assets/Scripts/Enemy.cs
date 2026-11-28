@@ -5,16 +5,22 @@ using UnityEngine;
 [RequireComponent(typeof(HealthSystem))]
 [RequireComponent(typeof(TargetingSystem))]
 public class Enemy : MonoBehaviour, IHasHealth, IDamageable, ITargetable, IRequiresTargetSystem {
+    private static int nextSpawnId;
+
     private const float TARGET_MAX_RADIUS = 10f;
 
+    public event EventHandler OnInitializeCompleted;
     public event EventHandler OnDamaged;
 
     [SerializeField] private EnemySO enemySO;
 
+    private int spawnId;
     private HealthSystem healthSystem;
     private TargetingSystem targetingSystem;
     private Rigidbody2D rigidbody2D;
     private Transform targetTransform;
+    private Action onDieAction;
+    private bool isInitialized = false;
 
     private void Awake() {
         rigidbody2D = GetComponent<Rigidbody2D>();
@@ -29,11 +35,20 @@ public class Enemy : MonoBehaviour, IHasHealth, IDamageable, ITargetable, IRequi
     }
 
     private void Update() {
-        HandleTargeting();
+        if (isInitialized) {
+            HandleTargeting();
+        }
     }
 
     private void FixedUpdate() {
-        HandleMovement();
+        if (isInitialized) {
+            HandleMovement();
+        }
+    }
+
+    private void OnDisable() {
+        onDieAction = null;
+        isInitialized = false;
     }
 
     private void OnDestroy() {
@@ -44,12 +59,14 @@ public class Enemy : MonoBehaviour, IHasHealth, IDamageable, ITargetable, IRequi
         if (collision2D.gameObject.TryGetComponent(out Building building)) {
             building.Damage(enemySO.damage);
 
-            Destroy(gameObject);
+            Die();
         }
     }
 
-    private void HealthSystem_OnDied(object sender, System.EventArgs e) {
-        Destroy(gameObject);
+    private void HealthSystem_OnDied(object sender, EventArgs e) {
+        SoundManager.Instance.PlaySound(SoundManager.Sound.EnemyDie);
+
+        Die();
     }
 
     private void HandleMovement() {
@@ -78,6 +95,27 @@ public class Enemy : MonoBehaviour, IHasHealth, IDamageable, ITargetable, IRequi
         }
     }
 
+    private void Die() {
+        Action action = onDieAction;
+
+        onDieAction = null;
+        isInitialized = false;
+
+        action?.Invoke();
+    }
+
+    public void Initialize(Vector3 position, Action onDieAction) {
+        transform.position = position;
+        this.onDieAction = onDieAction;
+        spawnId = ++nextSpawnId;
+
+        healthSystem.ResetHealthSystem();
+        targetingSystem.ResetTargetingSystem();
+
+        OnInitializeCompleted?.Invoke(this, EventArgs.Empty);
+        isInitialized = true;
+    }
+
     public float GetHealthAmountMax() {
         return enemySO.healthAmountMax;
     }
@@ -97,18 +135,13 @@ public class Enemy : MonoBehaviour, IHasHealth, IDamageable, ITargetable, IRequi
     public void Damage(float damageAmount) {
         healthSystem.Damage(damageAmount);
 
+        SoundManager.Instance.PlaySound(SoundManager.Sound.EnemyHit);
+
         OnDamaged?.Invoke(this, EventArgs.Empty);
     }
 
     public Vector3 GetTargetPosition() {
         return transform.position;
-    }
-
-    public static Enemy SpawnEnemy(EnemySO enemySO, Vector3 position) {
-        Transform enemyTransform = Instantiate(enemySO.prefab, position, Quaternion.identity);
-        Enemy enemy = enemyTransform.GetComponent<Enemy>();
-
-        return enemy;
     }
 
     public Transform GetTargetSearchOrigin() {
@@ -125,5 +158,9 @@ public class Enemy : MonoBehaviour, IHasHealth, IDamageable, ITargetable, IRequi
 
     public float GetTargetScanInterval() {
         return enemySO.lookForTargetTimerMax;
+    }
+
+    public int GetSpawnID() {
+        return spawnId;
     }
 }
